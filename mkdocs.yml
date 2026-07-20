@@ -1,0 +1,73 @@
+site_name: NoxDocs
+site_description: Documentation for ObnoxiouslyNoxious's Project Zomboid mods
+site_url: https://obnoxiouslynoxious.github.io/NoxDocs/
+repo_url: https://github.com/ObnoxiouslyNoxious/NoxDocs
+repo_name: ObnoxiouslyNoxious/NoxDocs
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: black
+      accent: grey
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+  icon:
+    repo: fontawesome/brands/github
+
+copyright: >
+  <a href="https://obnoxiouslynoxious.github.io/" target="_blank" rel="noopener"
+     style="display:inline-flex;align-items:center;gap:8px;color:inherit;text-decoration:none;">
+    <img src="https://obnoxiouslynoxious.github.io/NoxDocs/assets/img/obnox.png"
+         alt="ObnoxiouslyNoxious" width="26" height="26" style="border-radius:6px;vertical-align:middle;">
+    <span>ObnoxiouslyNoxious</span>
+  </a>
+
+plugins:
+  - search
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: fade
+      slide_effect: slide
+      width: 90%
+      height: auto
+      zoomable: true
+      draggable: true
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - toc
+
+nav:
+  - Home: index.md
+   - Mods:
+  #     - "Random Spawn Locations": mods/random-spawn-locations.md
+  #     - "Skill Master": mods/skill-master.md
+  #     - "Zombies Have Smokes": mods/zombies-have-smokes.md
+  #     - "Zombies Have Ammo": mods/zombies-have-ammo.md
+       - "Zombies Have Money": mods/zombies-have-money.md
+  #     - "AEBS Imperial & Metric Display": mods/aebs-converter.md
+  #     - "Auto-Drink Revert": mods/auto-drink-revert.md
+  #     - "NPC Tiles": mods/tiles-npc.md
+  #     - "Daily Challenges & Leaderboard": mods/daily-challenge-system.md
