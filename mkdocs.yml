@@ -61,13 +61,13 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-   - Mods:
-  #     - "Random Spawn Locations": mods/random-spawn-locations.md
-  #     - "Skill Master": mods/skill-master.md
-  #     - "Zombies Have Smokes": mods/zombies-have-smokes.md
-  #     - "Zombies Have Ammo": mods/zombies-have-ammo.md
-       - "Zombies Have Money": mods/zombies-have-money.md
-  #     - "AEBS Imperial & Metric Display": mods/aebs-converter.md
-  #     - "Auto-Drink Revert": mods/auto-drink-revert.md
-  #     - "NPC Tiles": mods/tiles-npc.md
-  #     - "Daily Challenges & Leaderboard": mods/daily-challenge-system.md
+  - Mods:
+      - "Zombies Have Money": mods/zombies-have-money.md
+      # - "Random Spawn Locations": mods/random-spawn-locations.md
+      # - "Skill Master": mods/skill-master.md
+      # - "Zombies Have Smokes": mods/zombies-have-smokes.md
+      # - "Zombies Have Ammo": mods/zombies-have-ammo.md
+      # - "AEBS Imperial & Metric Display": mods/aebs-converter.md
+      # - "Auto-Drink Revert": mods/auto-drink-revert.md
+      # - "NPC Tiles": mods/tiles-npc.md
+      # - "Daily Challenges & Leaderboard": mods/daily-challenge-system.md
