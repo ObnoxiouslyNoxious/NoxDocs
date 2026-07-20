@@ -18,6 +18,6 @@ Documentation for **ObnoxiouslyNoxious's** Project Zomboid Mods
     **[Zombies Have Ammo](mods/zombies-have-ammo.md)**
     <span class="pz-tag">B42</span><span class="pz-tag">SP/MP</span>
 
-    Gives zombies a configurable chance to drop loose ammunition or ammo boxes on death, on top of vanilla drop behaviour.
+    Adds a configurable chance for Zombies to drop loose Ammo & Ammo Boxes on death, on top of vanilla drop behaviour.
 
 </div>
