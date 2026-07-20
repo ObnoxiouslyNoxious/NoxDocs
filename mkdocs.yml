@@ -63,3 +63,4 @@ nav:
   - Home: index.md
   - Mods:
       - "Zombies Have Money": mods/zombies-have-money.md
+      - "Zombies Have Ammo": mods/zombies-have-ammo.md
