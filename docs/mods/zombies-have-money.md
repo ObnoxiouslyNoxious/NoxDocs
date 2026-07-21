@@ -2,7 +2,7 @@
 
 <div class="mod-hero" markdown>
 
-![Zombies Have Money](../assets/img/mods/Money.png){ .mod-icon }
+![Zombies Have Money](../assets/img/mods/money.png){ .mod-icon }
 
 <span class="pz-tag">B42</span><span class="pz-tag">SP/MP</span>
 
@@ -19,7 +19,7 @@ Adds a configurable chance for Zombies to drop Money & Money Bundles on death, o
 ## Gallery
 
 <div class="gallery-grid" markdown>
-![Zombies Have Money screenshot 1](../assets/img/mods/gallery/zombies-have-Money/ZHM1.png) ![Zombies Have Money screenshot 2](../assets/img/mods/gallery/zombies-have-Money/ZHM2.png) ![Zombies Have Money screenshot 3](../assets/img/mods/gallery/zombies-have-Money/ZHM3.png) ![Zombies Have Money screenshot 4](../assets/img/mods/gallery/zombies-have-Money/ZHMSS1.png) ![Zombies Have Money screenshot 5](../assets/img/mods/gallery/zombies-have-Money/ZHMSS2.png)
+![Zombies Have Money screenshot 1](../assets/img/mods/gallery/zombies-have-money/ZHM1.png) ![Zombies Have Money screenshot 2](../assets/img/mods/gallery/zombies-have-money/ZHM2.png) ![Zombies Have Money screenshot 3](../assets/img/mods/gallery/zombies-have-money/ZHM3.png) ![Zombies Have Money screenshot 4](../assets/img/mods/gallery/zombies-have-money/ZHMSS1.png) ![Zombies Have Money screenshot 5](../assets/img/mods/gallery/zombies-have-money/ZHMSS2.png)
 </div>
 
 
@@ -72,17 +72,17 @@ Found under the **Zombies Have Money** tab in Custom Sandbox options.
 | 42 | ✅ | ✅ | ✅ |
 | 41 | ❌ | ❌ | ❌ |
 
-!!! success 
+!!! question "Is this Mod safe to add/remove to existing Saves?"
+    
+    Yes, it is safe to add to existing saves and safe to remove, though any Money already looted from Zombies will remain in your save.
 
-    Safe to add to existing saves and safe to remove, though any Money already looted from Zombies will remain in your save.
+!!! question "Is this Mod compatible with 'X' Mod?"
 
-!!! success  
+    Yes, compatible with all other loot mods. Does not modify any existing loot tables or distributions.
 
-    Compatible with all other loot mods. Does not modify any existing loot tables or distributions. 
+!!! question "Does this Mod support 'X' Language?"
 
-!!! success 
-
-    Includes Translations for all 28 Supported Project Zomboid languages.
+    Yes, this Mod has translations for all 28 Supported Project Zomboid languages.
 
 ## Credits
 
