@@ -24,6 +24,6 @@ Documentation for **ObnoxiouslyNoxious's** Project Zomboid Mods
     **[NPC Tiles](mods/npc-tiles.md)**
     <span class="pz-tag">B42</span><span class="pz-tag">SP/MP</span>
 
-    Adds 84 Human NPC Tiles/Sprites and an 'NPC Tile Placer' script for Singleplayer and Multiplayer Admins to place NPC Tiles as static objects, or as Containers.
+    Adds 84 Human NPC Tiles/Sprites and a script for Singleplayer and Multiplayer Admins to place NPC Tiles as static objects or as Containers.
 
 </div>
