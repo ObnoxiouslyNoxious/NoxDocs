@@ -72,18 +72,23 @@ Found under the **Zombies Have Money** tab in Custom Sandbox options.
 | 42 | ✅ | ✅ | ✅ |
 | 41 | ❌ | ❌ | ❌ |
 
-- Compatible with other loot mods. Does not modify any existing loot tables or distributions.
-- Safe to add to existing saves. Safe to remove, though any money already looted from Zombies will remain in your save.
-- Supports all 28 Languages options in PZ
+!!! question "Is this Mod safe to add/remove to existing Saves?"
+    
+    Yes, it is safe to add to existing saves and safe to remove, though any money already looted from Zombies will remain in your save.
 
-## FAQ/Troubleshooting
+!!! question "Is this Mod compatible with 'X' Mod?"
 
-!!! question "Will this duplicate Money in multiplayer?"
+    Yes, compatible with all other loot mods. Does not modify any existing loot tables or distributions. Below is a list of any Mod Incompatabilities that is updated when an incompatibility is reported.
 
-    No, all spawning runs server-side only and is guarded with the below code:
-    ```
-    if isClient() and not isServer() then return end
-    ```
+!!! question "Does this Mod support 'X' Language?"
+
+    Yes, this Mod has translations for all 28 Supported Project Zomboid languages.
+
+## Incompatible Mods:
+
+!!! note "List of all reported Incompatible Mods"
+
+    None at this time
 
 ## Credits
 
