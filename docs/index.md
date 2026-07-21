@@ -20,4 +20,10 @@ Documentation for **ObnoxiouslyNoxious's** Project Zomboid Mods
 
     Adds a configurable chance for Zombies to drop Ammo & Ammo Boxes on death, on top of vanilla drop behaviour.
 
+-   ![NPC Tiles](assets/img/mods/npc-tiles.png){ .card-thumb }
+    **[NPC Tiles](mods/npc-tiles.md)**
+    <span class="pz-tag">B42</span><span class="pz-tag">SP/MP</span>
+
+    Adds 84 Human NPC Tiles/Sprites and an 'NPC Tile Placer' script for Singleplayer and Multiplayer Admins to place NPC Tiles as static objects, or as Containers.
+
 </div>
