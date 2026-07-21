@@ -57,6 +57,15 @@ WorkshopItems=3728283972
 
 For VFE or Guns of Marz support, subscribe to and load those Mods as well, then enable their pools in the Zombies Have Ammo (VFE)/Zombies Have Ammo (GoM) Sandbox Settings.
 
+```
+Mod ID: VFExpansionReduxb42
+Workshop ID: 3611718925
+```
+```
+Mod ID: MarzGuns
+Workshop ID: 3722134990
+```
+
 ## Configuration
 
 Settings live under the **Zombies Have Ammo** tab, split into three sub-tabs.
@@ -74,14 +83,7 @@ Settings live under the **Zombies Have Ammo** tab, split into three sub-tabs.
 | Uniformed Zombie Ammo Boost (%) | 50% | 0-100% | Chance a Uniformed Zombie drops Ammo (Additive % - Adds on top of Ammo Drop Chance (25% + 50% = 75% as Default)) |
 | Uniformed Zombie Ammo Quantity Multiplier | 2x | 0-100 | Multiplier applied to Uniformed Zombie Ammo Drops (If Default rolls 2 Boxes, Uniformed Zombie will drop 4 Boxes) |
 
-
-Each vanilla calibre (9mm, .38, .45, 12 Gauge, .30-30, 5.56, .308, .357, .44) has its own Enable toggle and Weight setting on this tab.
-
-**VFE Ammo** — requires Vanilla Firearms Expansion Redux (`VFExpansionReduxb42`) active. Master "Enable VFE Ammo" toggle (Default: Off), plus per-calibre Enable/Weight for .22 LR, .223 Rem, and 7.62x39mm.
-
-**Guns of Marz Ammo** — requires Guns of Marz active. Master "Enable Guns of Marz Ammo" toggle (Default: Off), plus per-calibre Enable/Weight across all 26 Guns of Marz calibres.
-
-### Vanilla Ammo
+**Vanilla Ammo Weight**
 
 | Calibre | Weight |
 |:---:|:---:|
@@ -95,7 +97,11 @@ Each vanilla calibre (9mm, .38, .45, 12 Gauge, .30-30, 5.56, .308, .357, .44) ha
 | .357 Magnum | 4 |
 | .44 Magnum | 2 |
 
-### VFE Ammo
+
+**Zombies Have Ammo (VFE)** 
+!!! note
+    
+    Requires Vanilla Firearms Expansion Redux (`VFExpansionReduxb42`) active. Set to 'Off' by Default.
 
 | Calibre | Weight |
 |:---:|:---:|
@@ -103,9 +109,11 @@ Each vanilla calibre (9mm, .38, .45, 12 Gauge, .30-30, 5.56, .308, .357, .44) ha
 | .223 | 12 |
 | 7.62x39mm | 8 |
 
-Only active if Enable VFE Ammo is ON and VFE is installed.
 
-### Guns of Marz Ammo
+**Zombies Have Ammo (GoM)** 
+!!! note
+    
+    Requires Guns of Marz (`MarzGuns`) active. Set to 'Off' by Default.
 
 | Calibre | Weight |
 |:---:|:---:|
