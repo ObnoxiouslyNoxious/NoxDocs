@@ -81,6 +81,61 @@ Each vanilla calibre (9mm, .38, .45, 12 Gauge, .30-30, 5.56, .308, .357, .44) ha
 
 **Guns of Marz Ammo** — requires Guns of Marz active. Master "Enable Guns of Marz Ammo" toggle (Default: Off), plus per-calibre Enable/Weight across all 26 Guns of Marz calibres.
 
+### Vanilla Ammo
+
+| Calibre | Weight |
+|:---:|:---:|
+| 9mm | 20 |
+| .38 Special | 16 |
+| .45 ACP | 14 |
+| 12g Shells | 14 |
+| .30-30 | 12 |
+| 5.56x45mm | 10 |
+| 7.62x51mm (.308) | 6 |
+| .357 Magnum | 4 |
+| .44 Magnum | 2 |
+
+### VFE Ammo
+
+| Calibre | Weight |
+|:---:|:---:|
+| .22 LR | 18 |
+| .223 | 12 |
+| 7.62x39mm | 8 |
+
+Only active if Enable VFE Ammo is ON and VFE is installed.
+
+### Guns of Marz Ammo
+
+| Calibre | Weight |
+|:---:|:---:|
+| 9x19mm | 18 |
+| .38 | 18 |
+| .45 | 18 |
+| .357 | 18 |
+| .44 | 18 |
+| .308 | 18 |
+| .223 | 18 |
+| .30-30 | 18 |
+| 12g Buckshot | 18 |
+| 7.62x51mm | 9 |
+| 5.56x45mm | 9 |
+| .50 AE | 9 |
+| 7.62x39mm | 9 |
+| 5.45x39mm | 9 |
+| 7.62x54mm | 9 |
+| .45-70 | 5 |
+| 9x39mm | 5 |
+| .30-06 | 5 |
+| 12g Slug | 5 |
+| 5.56 HP | 2 |
+| 5.56 AP | 2 |
+| 5.56 Subsonic | 1 |
+| 40mm Buckshot | 1 |
+| 40mm HE | 1 |
+| 40mm Incendiary | 1 |
+| 5.56 Overpressured | 1 |
+
 ## Compatibility
 
 | Build |  SP | Hosted MP | Dedicated MP
