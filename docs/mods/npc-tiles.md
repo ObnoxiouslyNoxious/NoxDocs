@@ -31,7 +31,7 @@ NPC Tiles is a **Build 42 Compatibility Port** of [Destiny & Vass's original NPC
 - Tile picker window with a scrollable sprite grid for choosing which figure to place
 - Ability to choose and change Container NPC Icon
 - Griefer Proof Tiles (Cannot be set on fire, dismantled, picked up, Sledgehammered or destroyed)
-- Translations for all 27 PZ-supported languages
+- Multi-Language Support. Translations Available: AR, CA, CH, CN, CS, DA, DE, EN, ES, FI, FR, HU, ID, IT, JP, KO, NL, NO, PH, PL, PT, PTBR, RO, RU, TH, TR, UA
 
 ## Installation
 
