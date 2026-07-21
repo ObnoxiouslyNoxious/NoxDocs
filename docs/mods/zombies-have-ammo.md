@@ -151,15 +151,15 @@ Settings live under the **Zombies Have Ammo** tab, split into three sub-tabs.
 | 42 | ✅ | ✅ | ✅ |
 | 41 or earlier | ❌ | ❌ | ❌ |
 
-!!! question "Is this Mod safe to add/remove to existing Saves?"
+!!! success "Is this Mod safe to add/remove to existing Saves?"
     
     Yes, it is safe to add to existing saves and safe to remove, though any Ammo already looted from Zombies will remain in your save.
 
-!!! question "Is this Mod compatible with 'X' Mod?"
+!!! success "Is this Mod compatible with 'X' Mod?"
 
     Yes, compatible with all other loot mods. Does not modify any existing loot tables or distributions.
 
-!!! question "Does this Mod support 'X' Language?"
+!!! success "Does this Mod support 'X' Language?"
 
     Yes, this Mod has translations for all 28 Supported Project Zomboid languages.
 
