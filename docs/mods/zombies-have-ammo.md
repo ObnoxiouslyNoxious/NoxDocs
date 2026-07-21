@@ -25,6 +25,7 @@ Adds a configurable chance for Zombies to drop loose Ammo on death, on top of va
 ## Features
 
 - Configurable chance for Zombies to drop loose Ammo or Ammo boxes.
+- Includes Support for Vanilla Firearms Expansion [B42.15] & Guns of Marz.
 - Includes a weighted Rarity System. Common Calibres (9mm, .38, .45) appear more often than rare ones (.44 Magnum).
 - Independent Enable + Weight setting for every Vanilla Calibre, VFE Calibre & GoM Calibre.
 - Optional Ammo pools for Vanilla Firearms Expansion (3 Calibres) and Guns of Marz (26 Calibres), each independently toggleable.
@@ -54,7 +55,7 @@ Mods=ZombiesHaveAmmo
 WorkshopItems=3728283972
 ```
 
-For VFE or Guns of Marz support, subscribe to and load those Mods as well, then enable their pools in Sandbox Settings.
+For VFE or Guns of Marz support, subscribe to and load those Mods as well, then enable their pools in the Zombies Have Ammo (VFE)/Zombies Have Ammo (GoM) Sandbox Settings.
 
 ## Configuration
 
@@ -76,19 +77,9 @@ Settings live under the **Zombies Have Ammo** tab, split into three sub-tabs.
 
 Each vanilla calibre (9mm, .38, .45, 12 Gauge, .30-30, 5.56, .308, .357, .44) has its own Enable toggle and Weight setting on this tab.
 
-**VFE Ammo** — requires Vanilla Firearms Expansion Redux (`VFExpansionReduxb42`) active. Master "Enable VFE Ammo" toggle (default Off), plus per-calibre Enable/Weight for .22 LR, .223 Rem, and 7.62x39mm.
+**VFE Ammo** — requires Vanilla Firearms Expansion Redux (`VFExpansionReduxb42`) active. Master "Enable VFE Ammo" toggle (Default: Off), plus per-calibre Enable/Weight for .22 LR, .223 Rem, and 7.62x39mm.
 
-**Guns of Marz Ammo** — requires Guns of Marz active. Master "Enable Guns of Marz Ammo" toggle (default Off), plus per-calibre Enable/Weight across all 26 Guns of Marz calibres.
-
-### Drop chances at default settings
-
-| Step | Outcome | Chance |
-|---|---|---|
-| 1 | Ammo drop triggers | 25% |
-| 2 (Ammo Packs off) | Loose rounds | 100% of the 25% |
-| 2 (Ammo Packs on, 10%) | Box drops | 10% of the 25% → 2.5% true chance |
-
-**Vanilla Ammo pool weights** (higher = more common): 9mm 20, .38 Special 16, .45 ACP 14, 12 Gauge 14, .30-30 12, 5.56x45mm 10, .308 6, .357 Magnum 4, .44 Magnum 2.
+**Guns of Marz Ammo** — requires Guns of Marz active. Master "Enable Guns of Marz Ammo" toggle (Default: Off), plus per-calibre Enable/Weight across all 26 Guns of Marz calibres.
 
 ## Compatibility
 
@@ -97,30 +88,25 @@ Each vanilla calibre (9mm, .38, .45, 12 Gauge, .30-30, 5.56, .308, .357, .44) ha
 | 42 | ✅ | ✅ | ✅ |
 | 41 or earlier | ❌ | ❌ | ❌ |
 
-Compatible with all loot mods — does not modify vanilla loot tables. Optional support for VFE and Guns of Marz. Safe to add or remove from an existing save.
+!!! question "Is this Mod safe to add/remove to existing Saves?"
+    
+    Yes, it is safe to add to existing saves and safe to remove, though any Ammo already looted from Zombies will remain in your save.
+
+!!! question "Is this Mod compatible with 'X' Mod?"
+
+    Yes, compatible with all other loot mods. Does not modify any existing loot tables or distributions.
+
+!!! question "Does this Mod support 'X' Language?"
+
+    Yes, this Mod has translations for all 28 Supported Project Zomboid languages.
 
 ## FAQ / Troubleshooting
 
 !!! question "I enabled VFE/Guns of Marz Ammo but I'm not seeing those calibres drop."
 
-    Make sure the source mod (VFE or Guns of Marz) is actually active in your mod list, and that both the pool's master toggle and the individual calibre's Enable toggle are on.
+    Make sure the source Mod (VFE or Guns of Marz) is actually active in your Mod list ([Refer to Installation](https://obnox.dev/NoxDocs/mods/zombies-have-ammo/#installation)), and that both the pool's master toggle and the individual calibre's Enable toggle are on.
 
-!!! question "Will this duplicate Ammo in multiplayer?"
-
-    No — all spawning runs server-side only.
-
-## Credits
-
-- [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3728283972)
 
 ## Changelog
 
-**v2.0.0**
-
-- Added per-calibre Enable/Weight tuning for every Ammo type
-- Added Ammo Packs (box drops) as a configurable option
-- Added Guns of Marz Ammo pool support (26 calibres)
-- Split Sandbox settings into three tabs (Main, VFE Ammo, Guns of Marz Ammo)
-- Migrated random rolls to `newrandom()` for improved performance
-
-See the mod's Steam Workshop page for the full version history.
+[:fontawesome-brands-steam-symbol: View Patch Notes](https://steamcommunity.com/sharedfiles/filedetails/changelog/3728283972)
