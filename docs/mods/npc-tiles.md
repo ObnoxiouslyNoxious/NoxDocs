@@ -14,7 +14,7 @@
 
 ## Overview
 
-NPC Tiles is a **Build 42 Compatibility Port** of [Destiny & Vass's original NPC Tiles Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=3344981715). It adds 84 placeable, static, human-figure Tile objects. Useful for creating Scenes for Screenshots or NPC Traders/Mission Markers. Includes an 'NPC Tile Placer' script for Singleplayer and Multiplayer Admins, plus a Container variant with 50 storage capacity.
+NPC Tiles is a **Build 42 Compatibility Port** of [Destiny & Vass's original NPC Tiles Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=3344981715). It adds 84 placeable, static, human-figure Tile objects. Useful for creating Scenes for Screenshots or NPC Traders/Mission Markers. Includes an 'NPC Tile Placer' script for Singleplayer and Multiplayer Admins, plus a Container variant with configuirable storage capacity.
 
 ## Gallery
 
@@ -30,6 +30,7 @@ NPC Tiles is a **Build 42 Compatibility Port** of [Destiny & Vass's original NPC
 - Standard NPC and Military NPC texture packs
 - Tile picker window with a scrollable sprite grid for choosing which figure to place
 - Ability to choose and change Container NPC Icon
+- Configuirable Container Capacity (1-10000)
 - Griefer Proof Tiles (Cannot be set on fire, dismantled, picked up, Sledgehammered or destroyed)
 - Multi-Language Support. Translations Available: AR, CA, CH, CN, CS, DA, DE, EN, ES, FI, FR, HU, ID, IT, JP, KO, NL, NO, PH, PL, PT, PTBR, RO, RU, TH, TR, UA
 
@@ -64,6 +65,10 @@ To remove an NPC Tile, right-click on the NPC Tile and select **Remove NPC Tile*
 |:---:|:---:|:---:|:---:|
 | 42.0+ | ✅ | ✅ | ✅ |
 | 41 | ❌ | ❌ | ❌ |
+
+!!! note "Multiplayer Capacity Support"
+
+    Capacities 1-100 supported fully. For capacities 100-10000, 'Multiplayer Weight Limit Breaker' (Workshop ID: 3641432632) is required to function correctly. Singleplayer unaffected and functions correctly with Capacities 1-10000 out of the box.
 
 ## FAQ / Troubleshooting
 
