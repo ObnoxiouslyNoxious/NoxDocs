@@ -27,6 +27,12 @@ Documentation for **ObnoxiouslyNoxious's** Project Zomboid Mods
 
     Adds a configurable chance for Zombies to drop Ammo & Ammo Boxes on death, on top of vanilla drop behaviour.
 
+-   ![Random Spawn Locations](assets/img/mods/random-spawn.png){ .card-thumb }
+    **[Random Spawn Locations](mods/random-spawn-locations.md)**
+    <span class="pz-tag">B42</span><span class="pz-tag">SP/MP</span>
+
+    Replaces all Vanilla spawn choices with a single **"Random Spawn, KY"** option, choosing one of thousands of Spawn points spread across Knox Country.
+
 -   ![NPC Tiles](assets/img/mods/npc-tiles.png){ .card-thumb }
     **[NPC Tiles](mods/npc-tiles.md)**
     <span class="pz-tag">B42</span><span class="pz-tag">SP/MP</span>
