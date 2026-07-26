@@ -49,14 +49,18 @@ The spawn pool is filtered based on the server's Sandbox Options before any coor
 **Multiplayer:**
 
 === "Step 1 — Subscribe"
-
+    
     Subscribe to **[B42] Random Spawn Locations [MP]** on Steam Workshop. If your server also runs a supported modded map, subscribe to that too:
+    
+    !!! note "Modded Maps"
+            
+        ```
+        - Maplewood [B42] — Workshop ID `3644794945`
+        - Raven Creek (B42) — Workshop ID `3484263516`
+        - AnruisiTown (Military Bastion) — Workshop ID `3659676359`
+        ```
 
-    - Maplewood [B42] — Workshop ID `3644794945`
-    - Raven Creek (B42) — Workshop ID `3484263516`
-    - AnruisiTown (Military Bastion) — Workshop ID `3659676359`
-
-    All connecting Clients must be subscribed to the same map mods as the server.
+    All connecting Clients must be subscribed to the same Map Mods as the Server.
 
 === "Step 2 — Server .ini"
 
@@ -69,6 +73,8 @@ The spawn pool is filtered based on the server's Sandbox Options before any coor
         Linux:   /home/<user>/Zomboid/Server/<ServerName>.ini
         ```
 
+    !!! note "<ServerName>.ini"
+
         ```ini
         Mods=RandomSpawnLocations
         WorkshopItems=3730705272
@@ -76,7 +82,7 @@ The spawn pool is filtered based on the server's Sandbox Options before any coor
         SpawnPoint=0,0,0
         ```
 
-        With modded maps, `RandomSpawnLocations` must be first in `Mods=`, and `Random Spawn, KY` must be first in `Map=` with `Muldraugh, KY` last:
+    With modded maps, `RandomSpawnLocations` must be first in `Mods=`, and `Random Spawn, KY` must be first in `Map=` with `Muldraugh, KY` last:
 
     !!! note "Example:"
 
@@ -88,25 +94,29 @@ The spawn pool is filtered based on the server's Sandbox Options before any coor
     !!! warning
         The Server Settings UI may overwrite your `.ini` when you save changes in-game. Keep a backup copy of your edited `.ini` elsewhere so you don't have to redo this.
 
-=== "Step 3 — Spawnregions File"
+=== "Step 3 — SpawnRegions File"
 
-    Create or edit `<ServerName>_spawnregions.lua` in `Zomboid/Server/` (must match your `.ini` filename exactly):
+    !!! note "SpawnRegions File"
+    
+        Create or edit `<ServerName>_spawnregions.lua` in `Zomboid/Server/` (must match your `.ini` filename exactly):
 
-    ```lua
-    function SpawnRegions()
-        return {
-            { name = "Random Spawn, KY", file = "media/maps/Random Spawn, KY/spawnpoints.lua" },
-            { name = "Muldraugh, KY",    file = "media/maps/Muldraugh, KY/spawnpoints.lua" },
-        }
-    end
-    ```
+        ```lua
+        function SpawnRegions()
+            return {
+                { name = "Random Spawn, KY", file = "media/maps/Random Spawn, KY/spawnpoints.lua" },
+                { name = "Muldraugh, KY",    file = "media/maps/Muldraugh, KY/spawnpoints.lua" },
+            }
+        end
+        ```
 
     !!! important
         Both entries are required. `Muldraugh, KY` must be present or the spawn selection screen is skipped entirely.
 
 === "Step 4 — Start the server"
 
-    Start the server, then open **Custom Sandbox** settings (or edit the '<ServerName>_SandboxVars.lua' file) to configure the **Random Spawn** tabs (see [Configuration](#configuration) below). Players will now see only **Random Spawn, KY** on the 'Select Spawn Location' screen.
+    !!! note "Start the Server"
+
+        Start the server, then open **Custom Sandbox** settings (or edit the '<ServerName>_SandboxVars.lua' file) to configure the **Random Spawn** tabs (see [Configuration](#configuration) below). Players will now see only **Random Spawn, KY** on the 'Select Spawn Location' screen.
 
 ## Configuration
 
