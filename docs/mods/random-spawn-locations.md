@@ -73,7 +73,7 @@ The spawn pool is filtered based on the server's Sandbox Options before any coor
         Linux:   /home/<user>/Zomboid/Server/<ServerName>.ini
         ```
 
-    !!! note "<ServerName>.ini"
+    !!! note "[ServerName].ini"
 
         ```ini
         Mods=RandomSpawnLocations
@@ -109,14 +109,14 @@ The spawn pool is filtered based on the server's Sandbox Options before any coor
         end
         ```
 
-    !!! important
+    !!! warning
         Both entries are required. `Muldraugh, KY` must be present or the spawn selection screen is skipped entirely.
 
 === "Step 4 — Start the server"
 
     !!! note "Start the Server"
 
-        Start the server, then open **Custom Sandbox** settings (or edit the '<ServerName>_SandboxVars.lua' file) to configure the **Random Spawn** tabs (see [Configuration](#configuration) below). Players will now see only **Random Spawn, KY** on the 'Select Spawn Location' screen.
+        Start the server, then open **Custom Sandbox** settings (or edit the '[ServerName]_SandboxVars.lua' file) to configure the **Random Spawn** tabs (see [Configuration](#configuration) below). Players will now see only **Random Spawn, KY** on the 'Select Spawn Location' screen.
 
 ## Configuration
 
