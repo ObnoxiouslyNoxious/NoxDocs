@@ -62,29 +62,28 @@ The spawn pool is filtered based on the server's Sandbox Options before any coor
 
     Edit your server `.ini`:
 
-!!! note "Location:"
+    !!! note "Location:"
 
-    ```
-    Windows: C:\Users\<YourName>\Zomboid\Server\<ServerName>.ini
-    Linux:   /home/<user>/Zomboid/Server/<ServerName>.ini
-    ```
+        ```
+        Windows: C:\Users\<YourName>\Zomboid\Server\<ServerName>.ini
+        Linux:   /home/<user>/Zomboid/Server/<ServerName>.ini
+        ```
 
+        ```ini
+        Mods=RandomSpawnLocations
+        WorkshopItems=3730705272
+        Map=Random Spawn, KY;Muldraugh, KY
+        SpawnPoint=0,0,0
+        ```
 
-    ```ini
-    Mods=RandomSpawnLocations
-    WorkshopItems=3730705272
-    Map=Random Spawn, KY;Muldraugh, KY
-    SpawnPoint=0,0,0
-    ```
+        With modded maps, `RandomSpawnLocations` must be first in `Mods=`, and `Random Spawn, KY` must be first in `Map=` with `Muldraugh, KY` last:
 
-    With modded maps, `RandomSpawnLocations` must be first in `Mods=`, and `Random Spawn, KY` must be first in `Map=` with `Muldraugh, KY` last:
+    !!! note "Example:"
 
-!!! note "Example:"
-
-    ```ini
-    Mods=RandomSpawnLocations;RavenCreekB42;AnruisiTown;Maplewood
-    Map=Random Spawn, KY;RavenCreekB42;AnruisiTown;Maplewood;Muldraugh, KY
-    ```
+        ```ini
+        Mods=RandomSpawnLocations;RavenCreekB42;AnruisiTown;Maplewood
+        Map=Random Spawn, KY;RavenCreekB42;AnruisiTown;Maplewood;Muldraugh, KY
+        ```
 
     !!! warning
         The Server Settings UI may overwrite your `.ini` when you save changes in-game. Keep a backup copy of your edited `.ini` elsewhere so you don't have to redo this.
