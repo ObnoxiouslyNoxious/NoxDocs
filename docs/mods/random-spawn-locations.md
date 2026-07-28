@@ -19,6 +19,7 @@ Replaces all Vanilla spawn choices with a single **"Random Spawn, KY"** option. 
 ## Resources
 
 [**Random Spawn Location Interactive Map:**](https://obnox.dev/RSLMapProject/)
+
 [**Random Spawn Locations Index/Spreadsheet**](https://obnox.dev/RSLSheet/)
 
 ## Gallery
@@ -218,8 +219,6 @@ If all filters produce zero valid results, the mod automatically falls back to t
 ## Credits
 
 - A huge thank you to **Pillow** — ([Pillow's Random Spawns](https://steamcommunity.com/sharedfiles/filedetails/?id=1911132112)) — for making their extensive spawn location data openly available under the [GNU General Public License v3.0](https://github.com/crispiboi/Pillow-s-Many-Spawns-Pack). The spawn pool in this mod is built upon their incredible work curating thousands of verified spawn points across Knox Country.
-- [RSL Spawn Map](https://obnoxiouslynoxious.github.io/RSLMapProject/) — view all spawn locations on an interactive map
-- [RSL Spawn Index](https://docs.google.com/spreadsheets/d/1ZaW1JDPTXN_U8sBjgZKKLwKkwf4NZwS23TsA0I3B_64/edit?gid=0#gid=0) — full spreadsheet index of spawn locations
 
 This Mod is open source and available under the [GNU General Public License v3.0](https://github.com/ObnoxiouslyNoxious/RandomSpawnLocations-MP-/blob/main/LICENSE).
 
