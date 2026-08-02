@@ -1,4 +1,5 @@
 site/
 __pycache__/
-README.md
 drafts/
+README.md
+DEVLOG.md
