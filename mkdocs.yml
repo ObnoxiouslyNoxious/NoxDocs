@@ -21,6 +21,7 @@ theme:
     - content.tabs.link
   icon:
     repo: fontawesome/brands/github
+  favicon: assets/img/favicon.png
 
 copyright: >
   <a href="https://obnoxiouslynoxious.github.io/" target="_blank" rel="noopener"
