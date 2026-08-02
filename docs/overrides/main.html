@@ -1,6 +1,11 @@
+{# Override logo in header #}
 {% extends "base.html" %}
 
-{% block extrahead %}
+{% block header %}
   {{ super() }}
-  <link rel="icon" href="{{ config.theme.favicon }}" type="image/png">
+  <style>
+    .md-header__button.md-logo img {
+      content: url("{{ config.theme.favicon }}");
+    }
+  </style>
 {% endblock %}
