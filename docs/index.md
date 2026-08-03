@@ -1,5 +1,11 @@
 # NoxDocs
 
+<div class="hero-banner" markdown>
+
+![NoxDocs Banner](assets/img/noxdocs-banner.png)
+
+</div>
+
 Documentation for **ObnoxiouslyNoxious's** Project Zomboid Mods
 
 **NoxDocs is a Work In Progress**
