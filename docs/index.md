@@ -1,5 +1,3 @@
-# NoxDocs
-
 <div class="hero-banner" markdown>
 
 ![NoxDocs Banner](assets/img/noxdocs-banner.png)
