@@ -39,8 +39,8 @@
   box-shadow: none;
 }
 
-.md-header__title {
-  visibility: visible;
+.md-typeset h1 {
+  display: none;
 }
 
 .md-nav__link--active,
