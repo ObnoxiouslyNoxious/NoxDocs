@@ -10,7 +10,11 @@ Documentation for **ObnoxiouslyNoxious's** Project Zomboid Mods
 
 **NoxDocs is a Work In Progress**
 
-## Mods
+<div class="section-banner" markdown>
+
+![Mods Banner](assets/img/mods-banner.png)
+
+</div>
 
 <div class="grid cards" markdown>
 
