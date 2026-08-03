@@ -225,7 +225,8 @@
 }
 
 .section-banner {
-  margin: 1.5rem -1rem 1rem;
+  margin: 1.5rem auto 1rem;
+  max-width: 50%;
 }
 .section-banner img {
   width: 100%;
