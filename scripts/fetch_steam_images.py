@@ -5,6 +5,7 @@ Steam is the one place images are managed; NoxDocs pages point at the files this
     python scripts/fetch_steam_images.py              every Mod listed in scripts/steam_mods.json
     python scripts/fetch_steam_images.py --mod zombies-have-money
     python scripts/fetch_steam_images.py --force      download again even if unchanged
+    python scripts/fetch_steam_images.py --live-only  only Mods that have a page (used by the deploy workflow)
 
 A Mod that has a page (docs/mods/<slug>.md) is written to docs/assets/img/mods/steam/<slug>/. Any other Mod goes to
 drafts/img/mods/steam/<slug>/ (outside docs, gitignored), so nothing unpublished is deployed; run the script again once the
@@ -136,12 +137,15 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--mod')
     ap.add_argument('--force', action='store_true')
+    ap.add_argument('--live-only', action='store_true', help='skip Mods without a page in docs/mods/')
     args = ap.parse_args()
     mods = json.load(open(MODS_FILE, encoding='utf-8'))
     if args.mod:
         if args.mod not in mods:
             sys.exit('%s is not in scripts/steam_mods.json' % args.mod)
         mods = {args.mod: mods[args.mod]}
+    if args.live_only:
+        mods = {s: i for s, i in mods.items() if os.path.exists(os.path.join(ROOT, 'docs', 'mods', s + '.md'))}
     for slug, item_id in mods.items():
         print(slug, item_id)
         sync_mod(slug, item_id, args.force)
