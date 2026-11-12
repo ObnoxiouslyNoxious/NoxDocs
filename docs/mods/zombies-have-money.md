@@ -32,7 +32,7 @@ Adds a configurable chance for Zombies to drop Money on death, on top of vanilla
 - All drops are handled on the server, with no client drop logic and no duplication risk
 - Translations for all 28 supported Project Zomboid languages
 
-## How It Works
+## Mechanics
 
 Every time a Zombie is killed, the Mod rolls for a drop on the server.
 
@@ -98,7 +98,8 @@ Found under the **Zombies Have Money** tab in the Custom Sandbox options.
 
 ## Credits
 
-Inspired by Chromaa's ['More Money On Zombies'](https://steamcommunity.com/sharedfiles/filedetails/?id=3673644380), which has since been removed from the Workshop.
+- Inspired by Chromaa's ['More Money On Zombies'](https://steamcommunity.com/sharedfiles/filedetails/?id=3673644380){target="_blank"}, since removed from the Workshop
+- Translations: Nycotex (Italian)
 
 ## Changelog
 

@@ -36,10 +36,10 @@ Singleplayer Players filter their own Spawn Pool with the Random Spawn Locations
 
 **'Select Spawn Location' Screen**
 
-- Random Spawn Locations panel: choose Presets, Types, Locations and Map Mods for the Spawn Pool, outside the Custom Sandbox Game Mode
+- Random Spawn Locations panel: Choose Presets, Types, Locations and Map Mods for the Spawn Pool, outside the Custom Sandbox Game Mode
 - Add or remove individual Spawn Regions (for example Echo Creek, KY) next to Random Spawn, with descriptions and preview images for all Vanilla Locations, Isolated Areas and Wilderness
-- Spawn Chances: set the chance of spawning in each Location of the selection
-- Map Dots overlay: shows every Spawn Point in the selection, coloured by Location. Hardcore Spawn Points have a purple ring and Balanced Spawn Points a lime-green ring
+- Spawn Chances: Set the chance of spawning in each Location of the selection
+- Map Dots overlay: Shows every Spawn Point in the selection, coloured by Location. Hardcore Spawn Points have a purple ring and Balanced Spawn Points a lime-green ring
 - Paper Map / World Map, Dark/Light Mode and Isometric/Top Down toggles
 - Selectable Spawn Regions for all supported Map Mods and all 16 Project Indiana towns
 
@@ -47,7 +47,7 @@ Singleplayer Players filter their own Spawn Pool with the Random Spawn Locations
 
 - Hold **M** (or the rebound Map key) and choose **RSL Admin Menu** to open RSL Settings and Map & Filters
 - Changes an Admin applies on a server reach Clients without a reconnect
-- Admin Map with a TELEPORT button: right-click a Location to drop a pin, then teleport to it
+- Admin Map with a TELEPORT button: Right-click a Location to drop a pin, then teleport to it
 
 **Spawn Handling**
 
@@ -61,7 +61,7 @@ Singleplayer Players filter their own Spawn Pool with the Random Spawn Locations
 - Challenge Mode support: 28 Minutes Later, A Really CD DA, Top of the World and Winter Is Coming
 - UI and Sandbox translations for all supported Project Zomboid languages
 
-## How It Works
+## Mechanics
 
 When a Player creates a new Character, the 'Select Spawn Location' screen shows the **Random Spawn** row, plus any extra Spawn Regions the Singleplayer Player or the server Admin has ticked. Picking Random Spawn places the Player at one Spawn Point drawn at random from the active pool. All professions draw from the same pool.
 
@@ -79,15 +79,9 @@ The game's own spawn system places the Player and removes nearby Zombies accordi
 
 === "Step 1, Subscribe"
 
-    Subscribe to **[B42] Random Spawn Locations [MP]** on the Steam Workshop. If the server also runs a supported Map Mod, subscribe to that too:
+    Subscribe to **[B42] Random Spawn Locations [MP]** on the Steam Workshop. If the server also runs a supported Map Mod, subscribe to that too.
 
-    !!! note "Map Mods"
-
-        ```text
-        - Maplewood [B42]: Workshop ID 3644794945
-        - Raven Creek (B42): Workshop ID 3484263516
-        - AnruisiTown (Military Bastion): Workshop ID 3659676359
-        ```
+    Every supported Map Mod, with its Workshop ID and Mod ID, is listed under [Supported Map Mods](#supported-map-mods).
 
     Every connecting Client must be subscribed to the same Map Mods as the server.
 
@@ -166,7 +160,7 @@ Balanced Presets use hand-picked, verified Spawn Points with an equal number (12
 
 - **Balanced (Residential):** 12 Spawn Points in each of 12 towns (every town except Dixie, Doe Valley and Dark Wallow Lake)
 - **Balanced (Non-Residential):** 12 Spawn Points in each of the same 12 towns
-- **Balanced (Wilderness):** a smaller hand-picked set of Wilderness Spawn Points
+- **Balanced (Wilderness):** A smaller hand-picked set of Wilderness Spawn Points
 
 Untick a town in Locations to remove it from the Balanced Presets. Selected Map Mods are added on top.
 
@@ -174,10 +168,10 @@ Untick a town in Locations to remove it from the Balanced Presets. Selected Map 
 
 All Types are off by default.
 
-- **Residential:** houses, apartments, trailers and farmhouses
-- **Non-Residential:** businesses, warehouses, offices and civic buildings
-- **Hardcore:** dangerous locations such as police stations, jails and military zones
-- **Isolated Areas:** remote Spawn Points such as cabins, camps and rural hideaways
+- **Residential:** Houses, apartments, trailers and farmhouses
+- **Non-Residential:** Businesses, warehouses, offices and civic buildings
+- **Hardcore:** Dangerous locations such as police stations, jails and military zones
+- **Isolated Areas:** Remote Spawn Points such as cabins, camps and rural hideaways
 - **Wilderness:** Spawn Points in the middle of the woods, at least 200 tiles from any road or structure
 
 ### Safehouses
@@ -197,13 +191,23 @@ The Location ID is the Spawn Point's ID in the [Random Spawn Locations Interacti
 
 ### Supported Map Mods
 
-| Map Mod | Workshop ID |
-|:---|:---:|
-| Maplewood [B42] | `3644794945` |
-| Raven Creek (B42) | `3484263516` |
-| AnruisiTown (Military Bastion) | `3659676359` |
+| Map Mod | Workshop ID | Mod ID |
+|:---|:---:|:---|
+| [Maplewood [B42]](https://steamcommunity.com/sharedfiles/filedetails/?id=3644794945){target="_blank"} | `3644794945` | `Maplewood` |
+| [Raven Creek B42](https://steamcommunity.com/sharedfiles/filedetails/?id=3484263516){target="_blank"} | `3484263516` | `RavenCreekB42` |
+| [AnruisiTown (Military Bastion)](https://steamcommunity.com/sharedfiles/filedetails/?id=3659676359){target="_blank"} | `3659676359` | `AnruisiTown` |
+| [Tikitown & Powerplant](https://steamcommunity.com/sharedfiles/filedetails/?id=3037854728){target="_blank"} | `3037854728` | `tikitown` |
+| [Willowbrook Bastion!](https://steamcommunity.com/sharedfiles/filedetails/?id=3479667649){target="_blank"} | `3479667649` | `Willowbrook Bastion!` (or its `2` / `MO` versions) |
+| [Daisy County B42 version](https://steamcommunity.com/sharedfiles/filedetails/?id=3390753141){target="_blank"} | `3390753141` | `Daisy County B42 version` |
+| [Iris Eyot [B42]](https://steamcommunity.com/sharedfiles/filedetails/?id=3545473388){target="_blank"} | `3545473388` | `IrisEyot` |
+| [Frogtown by TwinCrows](https://steamcommunity.com/sharedfiles/filedetails/?id=3449473111){target="_blank"} | `3449473111` | `Frogtown` |
+| [Blackpine County B42 Stable](https://steamcommunity.com/sharedfiles/filedetails/?id=3565649631){target="_blank"} | `3565649631` | `BlackpineCounty` |
+| [Begonia Town](https://steamcommunity.com/sharedfiles/filedetails/?id=3736155379){target="_blank"} | `3736155379` | `Begonia_Town` |
+| [Project Indiana Expansion B42 DEMO](https://steamcommunity.com/sharedfiles/filedetails/?id=3507117617){target="_blank"} | `3507117617` | `PIE42` |
 
-Tikitown, Willowbrook Bastion, Daisy County, Iris Eyot, Frogtown, Blackpine, Begonia Town and the Project Indiana towns are also supported. The [Supported Map Mods Collection](https://steamcommunity.com/sharedfiles/filedetails/?id=3830890031){target="_blank"} lists them all. Every Map Mod is **off by default**. Clients must be subscribed to the same Map Mods as the server. Map Mods are not available in Challenge Modes for now.
+Project Indiana adds 16 towns, each a separate Spawn Region: Elizabeth, Georgetown, New Middletown, Charlestown, Utica, Jeffersonville, Clarksville, New Albany, Duncan, Lanesville, Laconia, Rosewood, Mauckport, New Amsterdam, Central and Corydon (all IN).
+
+The [Supported Map Mods Collection](https://steamcommunity.com/sharedfiles/filedetails/?id=3830890031){target="_blank"} holds every Map Mod above. Every Map Mod is **off by default**. Clients must be subscribed to the same Map Mods as the server. Map Mods are not available in Challenge Modes for now.
 
 !!! tip
     Consider letting Players spawn with a flashlight, especially with Non-Residential, Hardcore or Isolated Areas spawns enabled.
@@ -269,10 +273,10 @@ Random Spawn Locations supports **28 Minutes Later** (hospitals and medical cent
 
 ## Roadmap
 
-- **Player Spawn Proximity Check:** avoid spawning new Characters near existing Players
-- **Single Use Spawn Points:** remove Spawn Points once used, resetting the pool when all are used up
-- **Larger Balanced Pools:** more than 12 Spawn Points per Location
-- **More Map Mods:** further community Map Mods (requests welcome on the Workshop page)
+- **Player Spawn Proximity Check:** Avoid spawning new Characters near existing Players
+- **Single Use Spawn Points:** Remove Spawn Points once used, resetting the pool when all are used up
+- **Larger Balanced Pools:** More than 12 Spawn Points per Location
+- **More Map Mods:** Further community Map Mods (requests welcome on the Workshop page)
 
 ## Credits
 

@@ -27,7 +27,7 @@ Adds a configurable chance for Zombies to drop loose Ammo or Ammo Boxes on death
 ## Features
 
 - Configurable chance for Zombies to drop loose Ammo or Ammo Boxes
-- A weighted rarity system: common calibres (9mm, .38 Special, .45 ACP) drop more often than rare ones (.44 Magnum)
+- A weighted rarity system: Common calibres (9mm, .38 Special, .45 ACP) drop more often than rare ones (.44 Magnum)
 - An Enable toggle and a Weight for every calibre
 - A Uniformed Zombie Boost for military, police, ranger, hunter and similar outfits
 - Optional Ammo pools for Vanilla Firearms Expansion (3 calibres), Guns of Marz (26), Rain's Firearms & Gun Parts (2) and Military Tool Kit (12), each with its own toggle
@@ -36,7 +36,7 @@ Adds a configurable chance for Zombies to drop loose Ammo or Ammo Boxes on death
 
 The default Weights follow vanilla Ammo rarity. [This spreadsheet](https://docs.google.com/spreadsheets/d/1jyMDCzuaRMEdNE0QTT5A87inBiy1Ob_tLvu35FuWstA/edit?usp=sharing){target="_blank"} lists them. Weights are not percentages: a higher Weight is more common.
 
-## How It Works
+## Mechanics
 
 Every Zombie death triggers a single Ammo roll on the server.
 
@@ -214,6 +214,10 @@ The 14.5mm, 30mm and 105mm rounds have no Ammo Box item and always drop loose.
 ## Roadmap
 
 - Support for more gun Mods. Requests are welcome in the pinned Discussions thread on the Workshop page or on [Nox's Discord Server](https://obnox.dev/discord){target="_blank"}.
+
+## Credits
+
+- Translations: Nycotex (Italian)
 
 ## Changelog
 

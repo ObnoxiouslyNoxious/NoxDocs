@@ -235,3 +235,7 @@
   object-fit: cover;
   border-radius: 8px;
 }
+
+.no-header thead {
+  display: none;
+}

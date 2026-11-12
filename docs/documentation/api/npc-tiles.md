@@ -10,13 +10,13 @@
 
 1. Choose how the calling Mod depends on NPC Tiles:
 
-    - **Hard dependency:** add NPC Tiles as a requirement in both of the calling Mod's `mod.info` files. The calling Mod then cannot be enabled without NPC Tiles.
+    - **Hard dependency (recommended):** Add NPC Tiles as a requirement in both of the calling Mod's `mod.info` files. The calling Mod then cannot be enabled without NPC Tiles.
 
         ```ini
         require=[B42]NPCTiles
         ```
 
-    - **Soft dependency:** leave the `require=` line out and check that `NPCTiles_API` is not `nil` before calling it. The calling Mod then works with or without NPC Tiles, and its NPC Tile features stay off when NPC Tiles is not enabled.
+    - **Soft dependency:** Only for a Mod where NPC Tiles is an optional extra. Leave the `require=` line out and check that `NPCTiles_API` is not `nil` before calling it. The calling Mod then works with or without NPC Tiles, and its NPC Tile features stay off when NPC Tiles is not enabled.
 
 2. Call the API only from server-authoritative code: Singleplayer, a Hosted server's logic or a Dedicated server. On a remote client every mutating call returns `false, "server_only"`.
 3. With a hard dependency, `require "NPCTiles_API"`. With either kind, check `NPCTiles_API.isAvailable(1)` at server start. If it returns `false`, log one line and leave the feature off.

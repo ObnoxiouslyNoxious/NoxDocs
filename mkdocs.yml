@@ -24,12 +24,13 @@ theme:
   icon:
     repo: fontawesome/brands/github
   favicon: assets/img/favicon.png
+  logo: assets/img/logo-book.png
 
 copyright: >
-  <a href="https://obnoxiouslynoxious.github.io/" target="_blank" rel="noopener"
+  <a href="https://obnox.dev/" target="_blank" rel="noopener"
      style="display:inline-flex;align-items:center;gap:8px;color:inherit;text-decoration:none;">
-    <img src="https://obnoxiouslynoxious.github.io/NoxDocs/assets/img/obnox.png"
-         alt="ObnoxiouslyNoxious" width="26" height="26" style="border-radius:6px;vertical-align:middle;">
+    <img src="https://obnoxiouslynoxious.github.io/NoxDocs/assets/img/logo-flycut.png"
+         alt="ObnoxiouslyNoxious" width="26" height="26" style="vertical-align:middle;">
     <span>ObnoxiouslyNoxious</span>
   </a>
 
@@ -47,6 +48,9 @@ plugins:
 
 extra_css:
   - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/nav-collapsed.js
 
 extra:
   custom_dir: docs/overrides
@@ -69,11 +73,26 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Mods:
+      - Overview: mods/index.md
       - "Zombies Have Money": mods/zombies-have-money.md
       - "Zombies Have Smokes": mods/zombies-have-smokes.md
       - "Zombies Have Ammo": mods/zombies-have-ammo.md
       - "Random Spawn Locations": mods/random-spawn-locations.md
       - "NPC Tiles": mods/npc-tiles.md
+      - "Dynamic Challenges & Leaderboard": mods/daily-challenge-system.md
+      - "XP Ranks": mods/xp-ranks.md
+      - "DeadSplit": mods/deadsplit.md
+      - "Livestock Traders": mods/livestock-traders.md
+      - "Sidebar Drawer": mods/sidebar-drawer.md
+      - "Auto-Drink Expanded": mods/auto-drink-expanded.md
+      - "Auto-Drunk": mods/auto-drunk.md
+      - "Auto-Drink Revert": mods/auto-drink-revert.md
+      - "GTA Menu Theme": mods/gta-menu-theme.md
+      - "RDR Menu Theme": mods/rdr-menu-theme.md
+      - "Skill Master": mods/skill-master.md
+      - "GNC Starting Clothes": mods/gnc-starting-clothes.md
+      - "AEBS Imperial & Metric Display": mods/aebs-converter.md
+      - "Menu Theme Framework": mods/menu-theme-framework.md
   - Documentation:
       - Overview: documentation/index.md
       - Framework:
@@ -90,4 +109,7 @@ nav:
               - Troubleshooting: documentation/menu-theme-framework/troubleshooting.md
               - Glossary: documentation/menu-theme-framework/glossary.md
       - API:
+          - "Dynamic Challenges": documentation/api/dynamic-challenges.md
           - "NPC Tiles": documentation/api/npc-tiles.md
+          - "XP Ranks": documentation/api/xp-ranks.md
+  - Credits: credits.md

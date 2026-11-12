@@ -53,7 +53,7 @@ Mods=[B42]NPCTiles
 WorkshopItems=3759853561
 ```
 
-## How It Works
+## Mechanics
 
 Right-click anywhere in the World and select **Place NPC Tile** or **Place NPC Container Tile** from the Context menu. Confirm the placement location, then choose a creator tab and (where available) a category tab before selecting the NPC Tile to place. The picker also offers an optional Shadow under the Tile.
 
@@ -73,6 +73,14 @@ Place NPC Tiles through the Context menu. The Debug Mode Brush Tool creates a de
 ## Public API
 
 Other Build 42 Mods can place and manage persistent NPC Tiles from server-side code through `NPCTiles_API` (version 1). See the [NPC Tiles API](../documentation/api/npc-tiles.md) page for the full reference.
+
+## Integrations
+
+| Mod | What It Adds |
+|:---|:---|
+| [Dynamic Challenges & Leaderboard](daily-challenge-system.md) | The Quest, Visit and Vendor markers can be NPC Characters (the NPC Tile option of each Object Marker setting in DCS Settings) |
+
+Each integration becomes available when both Mods are enabled.
 
 ## Compatibility
 
@@ -106,10 +114,10 @@ Other Build 42 Mods can place and manage persistent NPC Tiles from server-side c
 
 ## Credits
 
-- Build 42 compatibility work and framework by [ObnoxiouslyNoxious](https://steamcommunity.com/id/ObnoxiouslyNoxious)
 - Original Mod and Sprites by [Destiny](https://steamcommunity.com/id/destinyy55) and [Vass](https://steamcommunity.com/profiles/76561198003329839): [Original Mod's Workshop Page](https://steamcommunity.com/sharedfiles/filedetails/?id=3344981715)
 - Additional Tiles by Creator
 - Special thanks to RedChili for the [PZ Survivor Studio Tool](https://pz-icon-maker.vercel.app/)
+- Translations: Nycotex (Italian)
 
 ## Changelog
 

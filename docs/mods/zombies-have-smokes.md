@@ -33,7 +33,7 @@ Adds a configurable chance for Zombies to drop Cigarettes, Cigarette Packs, Ciga
 - All drops are handled on the server. Clients run no drop logic, preventing duplication and inventory desync
 - Translations for all 28 supported Project Zomboid languages
 
-## How It Works
+## Mechanics
 
 Every Zombie death runs through a series of rolls in order. Only enabled drop types roll. The first roll to succeed decides the drop: a Zombie never receives items from more than one roll.
 
@@ -100,6 +100,10 @@ Found under the **Zombies Have Smokes** tab in the Custom Sandbox options.
 
 !!! success "Does this Mod support 'X' Language?"
     Yes. It has translations for all 28 supported Project Zomboid languages.
+
+## Credits
+
+- Translations: Nycotex (Italian)
 
 ## Changelog
 
