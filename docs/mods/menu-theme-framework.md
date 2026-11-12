@@ -2,7 +2,7 @@
 
 <div class="mod-hero" markdown>
 
-![Menu Theme Framework preview](../assets/img/mods/steam/menu-theme-framework/preview.jpg){ .mod-icon }
+![Menu Theme Framework preview](../assets/img/mods/steam/menu-theme-framework/preview.gif){ .mod-icon }
 
 <span class="pz-tag">B42</span><span class="pz-tag">SP/MP</span><span class="pz-tag">Framework</span>
 

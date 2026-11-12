@@ -84,13 +84,13 @@ Mod Information including Overview, Features, Mechanics, Settings, Compatibility
 
     Restore the pre-42.19 Auto-Drink rule for Mixed Containers where Water is the primary Fluid. Includes Container Priority and per-Container controls.
 
--   ![GTA Menu Theme](../assets/img/mods/steam/gta-menu-theme/preview.jpg){ .card-thumb }
+-   ![GTA Menu Theme](../assets/img/mods/steam/gta-menu-theme/preview.gif){ .card-thumb }
     **[GTA Menu Theme](gta-menu-theme.md)**
     <span class="pz-tag">B42</span><span class="pz-tag">SP/MP</span>
 
     GTA-inspired Menu Music, layered Map Frames, five Button Layouts and an optional Main Menu Logo.
 
--   ![RDR Menu Theme](../assets/img/mods/steam/rdr-menu-theme/preview.png){ .card-thumb }
+-   ![RDR Menu Theme](../assets/img/mods/steam/rdr-menu-theme/preview.gif){ .card-thumb }
     **[RDR Menu Theme](rdr-menu-theme.md)**
     <span class="pz-tag">B42</span><span class="pz-tag">SP/MP</span>
 
@@ -114,7 +114,7 @@ Mod Information including Overview, Features, Mechanics, Settings, Compatibility
 
     Show Imperial and Metric temperature and wind speed values in AEBS broadcasts. Keep the Server's native units first.
 
--   ![Menu Theme Framework](../assets/img/mods/steam/menu-theme-framework/preview.jpg){ .card-thumb }
+-   ![Menu Theme Framework](../assets/img/mods/steam/menu-theme-framework/preview.gif){ .card-thumb }
     **[Menu Theme Framework](menu-theme-framework.md)**
     <span class="pz-tag">B42</span><span class="pz-tag">SP/MP</span>
 

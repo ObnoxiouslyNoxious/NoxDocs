@@ -101,13 +101,13 @@ Mod Information including Overview, Features, Mechanics, Settings, Compatibility
 
 
 
--   ![GTA Menu Theme](assets/img/mods/steam/gta-menu-theme/preview.jpg){ .card-thumb }
+-   ![GTA Menu Theme](assets/img/mods/steam/gta-menu-theme/preview.gif){ .card-thumb }
     **[GTA Menu Theme](mods/gta-menu-theme.md)**
     <span class="pz-tag">B42</span><span class="pz-tag">SP/MP</span>
 
     GTA-inspired Menu Music, layered Map Frames, five Button Layouts and an optional Main Menu Logo.
 
--   ![RDR Menu Theme](assets/img/mods/steam/rdr-menu-theme/preview.png){ .card-thumb }
+-   ![RDR Menu Theme](assets/img/mods/steam/rdr-menu-theme/preview.gif){ .card-thumb }
     **[RDR Menu Theme](mods/rdr-menu-theme.md)**
     <span class="pz-tag">B42</span><span class="pz-tag">SP/MP</span>
 

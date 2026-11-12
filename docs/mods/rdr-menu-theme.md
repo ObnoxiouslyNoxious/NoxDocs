@@ -2,7 +2,7 @@
 
 <div class="mod-hero" markdown>
 
-![RDR Menu Theme preview](../assets/img/mods/steam/rdr-menu-theme/preview.png){ .mod-icon }
+![RDR Menu Theme preview](../assets/img/mods/steam/rdr-menu-theme/preview.gif){ .mod-icon }
 
 <span class="pz-tag">B42</span><span class="pz-tag">SP/MP</span>
 

@@ -2,7 +2,7 @@
 
 <div class="mod-hero" markdown>
 
-![GTA Menu Theme preview](../assets/img/mods/steam/gta-menu-theme/preview.jpg){ .mod-icon }
+![GTA Menu Theme preview](../assets/img/mods/steam/gta-menu-theme/preview.gif){ .mod-icon }
 
 <span class="pz-tag">B42</span><span class="pz-tag">SP/MP</span>
 
