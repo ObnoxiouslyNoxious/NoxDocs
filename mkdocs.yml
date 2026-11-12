@@ -6,6 +6,7 @@ repo_name: ObnoxiouslyNoxious/NoxDocs
 
 theme:
   name: material
+  custom_dir: theme-overrides
   palette:
     - scheme: slate
       primary: black
@@ -15,6 +16,7 @@ theme:
     - navigation.tracking
     - navigation.tabs
     - navigation.top
+    - navigation.footer
     - search.suggest
     - search.highlight
     - content.code.copy
@@ -61,7 +63,8 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
   - tables
-  - toc
+  - toc:
+      title: Table of Contents
 
 nav:
   - Home: index.md
@@ -71,3 +74,20 @@ nav:
       - "Zombies Have Ammo": mods/zombies-have-ammo.md
       - "Random Spawn Locations": mods/random-spawn-locations.md
       - "NPC Tiles": mods/npc-tiles.md
+  - Documentation:
+      - Overview: documentation/index.md
+      - Framework:
+          - "Menu Theme Framework":
+              - Introduction: documentation/menu-theme-framework/index.md
+              - Getting Started: documentation/menu-theme-framework/getting-started.md
+              - Audio: documentation/menu-theme-framework/audio.md
+              - Graphics: documentation/menu-theme-framework/images.md
+              - Video: documentation/menu-theme-framework/video.md
+              - Buttons and Layouts: documentation/menu-theme-framework/buttons-and-layouts.md
+              - Cards and Styling: documentation/menu-theme-framework/cards-and-styling.md
+              - Settings and Translations: documentation/menu-theme-framework/settings-and-translations.md
+              - Reference: documentation/menu-theme-framework/reference.md
+              - Troubleshooting: documentation/menu-theme-framework/troubleshooting.md
+              - Glossary: documentation/menu-theme-framework/glossary.md
+      - API:
+          - "NPC Tiles": documentation/api/npc-tiles.md

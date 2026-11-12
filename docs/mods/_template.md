@@ -29,7 +29,7 @@
 
 ## How It Works
 
-Explain the core mechanic — what triggers it, the order rolls/checks happen in, and a note that spawning/logic runs server-side only (if applicable) to reassure multiplayer safety.
+Explain the core mechanic, what triggers it, the order rolls/checks happen in, and a note that spawning/logic runs server-side only (if applicable) to reassure multiplayer safety.
 
 ## Installation
 
@@ -48,7 +48,7 @@ Found under the **<Mod Name>** tab in Custom Sandbox options.
 
 | Setting | Default | Range | Description |
 |:---:|:---:|:---:|:---:|
-| Example Setting | `true` | — | Description |
+| Example Setting | `true` |, | Description |
 
 ## Compatibility
 

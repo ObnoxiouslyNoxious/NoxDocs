@@ -3,3 +3,4 @@ __pycache__/
 drafts/
 README.md
 DEVLOG.md
+*.pyc

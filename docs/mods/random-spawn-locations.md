@@ -2,74 +2,102 @@
 
 <div class="mod-hero" markdown>
 
-![Random Spawn Locations](../assets/img/mods/random-spawn.png){ .mod-icon }
+![Random Spawn Locations](../assets/img/mods/steam/random-spawn-locations/preview.gif){ .mod-icon }
 
 <span class="pz-tag">B42</span><span class="pz-tag">SP/MP</span>
 
 [:fontawesome-brands-steam-symbol: Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3730705272)
 
-**Recommended Build:** 42.15+
+**Recommended Build:** 42.19+
 
 </div>
 
 ## Overview
 
-Replaces all Vanilla spawn choices with a single **"Random Spawn, KY"** option. Each new character spawns at a randomly selected location drawn from a curated pool of thousands of verified spawn points spread across Knox Country. No two characters are guaranteed to start in the same place. Includes a 'Balanced' option to ensure players have equal chances of spawning in each Town.
+*'They say that variety is the spice of life. But in Knox Country, it's also the spice of death'*
+
+Adds a **Random Spawn** option to the 'Select Spawn Location' screen. Each new Character spawns at a randomly selected location drawn from a curated pool of **3,525 verified Spawn Points** across Knox Country, supported Map Mods and the Project Indiana towns. No two Characters are guaranteed to start in the same place.
+
+Singleplayer Players filter their own Spawn Pool with the Random Spawn Locations panel on the 'Select Spawn Location' screen. The Random Spawn Admin Menu lets Singleplayer Players and Multiplayer Admins configure the World's Spawn Pool, including live changes on a running server.
 
 ## Resources
 
-[**Random Spawn Location Interactive Map:**](https://obnox.dev/RSLMapProject/)
+[**Random Spawn Locations Interactive Map**](https://obnox.dev/RSLMapProject/)
 
 [**Random Spawn Locations Index/Spreadsheet**](https://obnox.dev/RSLSheet/)
 
 ## Gallery
 
 <div class="gallery-grid" markdown>
-![Random Spawn Locations screenshot 1](../assets/img/mods/gallery/random-spawn-locations/RSLSS1.png) ![Random Spawn Locations screenshot 2](../assets/img/mods/gallery/random-spawn-locations/RSLSS2.png) ![Random Spawn Locations screenshot 3](../assets/img/mods/gallery/random-spawn-locations/RSLSS3.png) ![Random Spawn Locations screenshot 4](../assets/img/mods/gallery/random-spawn-locations/RSLSS4.png) ![Random Spawn Locations screenshot 5](../assets/img/mods/gallery/random-spawn-locations/RSLSS5.png) ![Random Spawn Locations screenshot 6](../assets/img/mods/gallery/random-spawn-locations/RSLSS6.png)
+![Random Spawn Locations screenshot 1](../assets/img/mods/steam/random-spawn-locations/1.jpg) ![Random Spawn Locations screenshot 2](../assets/img/mods/steam/random-spawn-locations/2.jpg) ![Random Spawn Locations screenshot 3](../assets/img/mods/steam/random-spawn-locations/3.jpg) ![Random Spawn Locations screenshot 4](../assets/img/mods/steam/random-spawn-locations/4.jpg) ![Random Spawn Locations screenshot 5](../assets/img/mods/steam/random-spawn-locations/5.jpg) ![Random Spawn Locations screenshot 6](../assets/img/mods/steam/random-spawn-locations/6.jpg) ![Random Spawn Locations screenshot 7](../assets/img/mods/steam/random-spawn-locations/7.jpg) ![Random Spawn Locations screenshot 8](../assets/img/mods/steam/random-spawn-locations/8.jpg)
 </div>
 
 ## Features
 
-- Single "Random Spawn, KY" entry replaces the vanilla PZ Locations in the 'Select Spawn Location' screen
-- Thousands of hand-verified spawn points across Knox Country
-- Balanced preset spreads Spawns evenly across all Vanilla towns
-- Fine-grained control: Toggle individual Towns, Residential / Non-Residential / Hardcore / Isolated / Wilderness location types
-- Optional support for modded maps (Maplewood, Raven Creek, AnruisiTown) and Indiana map expansions
-- UI and Sandbox Translations for all Supported Project Zomboid Languages
+**'Select Spawn Location' Screen**
+
+- Random Spawn Locations panel: choose Presets, Types, Locations and Map Mods for the Spawn Pool, outside the Custom Sandbox Game Mode
+- Add or remove individual Spawn Regions (for example Echo Creek, KY) next to Random Spawn, with descriptions and preview images for all Vanilla Locations, Isolated Areas and Wilderness
+- Spawn Chances: set the chance of spawning in each Location of the selection
+- Map Dots overlay: shows every Spawn Point in the selection, coloured by Location. Hardcore Spawn Points have a purple ring and Balanced Spawn Points a lime-green ring
+- Paper Map / World Map, Dark/Light Mode and Isometric/Top Down toggles
+- Selectable Spawn Regions for all supported Map Mods and all 16 Project Indiana towns
+
+**Admin Menu (Singleplayer and Multiplayer)**
+
+- Hold **M** (or the rebound Map key) and choose **RSL Admin Menu** to open RSL Settings and Map & Filters
+- Changes an Admin applies on a server reach Clients without a reconnect
+- Admin Map with a TELEPORT button: right-click a Location to drop a pin, then teleport to it
+
+**Spawn Handling**
+
+- Players spawn directly on their Spawn Point
+- Zombies are cleared in a 21x21 area around the Spawn Point
+- The doors of the spawn room are unlocked and its working lights turned on (if the power is still on)
+- A house alarm does not go off when a Player spawns in an alarmed building
+- Optional repopulation of Large Buildings once the Player spawns
+- Safehouses that contain a Spawn Point can be claimed. Spawn Points inside a claimed Safehouse leave the pool until the claim ends
+- Optional Server Logging of every spawn
+- Challenge Mode support: 28 Minutes Later, A Really CD DA, Top of the World and Winter Is Coming
+- UI and Sandbox translations for all supported Project Zomboid languages
 
 ## How It Works
 
-When a Player creates a new Character, they are presented with a single **Random Spawn** option. The Mod selects one coordinate at random from the active Spawn pool and places the Player there. All professions draw from the same pool.
+When a Player creates a new Character, the 'Select Spawn Location' screen shows the **Random Spawn** row, plus any extra Spawn Regions the Singleplayer Player or the server Admin has ticked. Picking Random Spawn places the Player at one Spawn Point drawn at random from the active pool. All professions draw from the same pool.
 
-The spawn pool is filtered based on the server's Sandbox Options before any coordinate is sent to the Client. The full point list is never transmitted to Clients in Multiplayer.
+The game's own spawn system places the Player and removes nearby Zombies according to the Sandbox Setting *Player Spawn Area*. The Mod then clears Zombies in a 21x21 area around the Spawn Point, unlocks the doors of the spawn room, turns on its working lights and stops a house alarm from going off.
+
+**Singleplayer:** the Player sets the pool on the 'Select Spawn Location' screen with the Random Spawn Locations panel. At least one Preset or Type must be selected before Next is enabled. The Random Spawn Admin Menu changes the pool for the current World.
+
+**Multiplayer:** the Admin sets the pool in the Random Spawn Admin Menu and presses **Apply**. The pool lives on the server, which validates every request. The full Spawn Point list is never sent to Clients unless the Admin enables **Allow Clients to View Spawnpoints**, which sends the points needed to draw the Map Dots on the 'Select Spawn Location' screen.
 
 ## Installation
 
-**Singleplayer:** Subscribe to the Mod on Steam Workshop and enable it from the 'Choose Mods' screen.
+**Singleplayer:** Subscribe to the Mod on the Steam Workshop and enable it from the 'Choose Mods' screen.
 
 **Multiplayer:**
 
-=== "Step 1 — Subscribe"
-    
-    Subscribe to **[B42] Random Spawn Locations [MP]** on Steam Workshop. If your server also runs a supported modded map, subscribe to that too:
-    
-    !!! note "Modded Maps"
-            
+=== "Step 1, Subscribe"
+
+    Subscribe to **[B42] Random Spawn Locations [MP]** on the Steam Workshop. If the server also runs a supported Map Mod, subscribe to that too:
+
+    !!! note "Map Mods"
+
+        ```text
+        - Maplewood [B42]: Workshop ID 3644794945
+        - Raven Creek (B42): Workshop ID 3484263516
+        - AnruisiTown (Military Bastion): Workshop ID 3659676359
         ```
-        - Maplewood [B42] — Workshop ID `3644794945`
-        - Raven Creek (B42) — Workshop ID `3484263516`
-        - AnruisiTown (Military Bastion) — Workshop ID `3659676359`
-        ```
 
-    All connecting Clients must be subscribed to the same Map Mods as the Server.
+    Every connecting Client must be subscribed to the same Map Mods as the server.
 
-=== "Step 2 — Server .ini"
+=== "Step 2, Server .ini"
 
-    Edit your server `.ini`:
+    Edit the server's `.ini` file:
 
-    !!! note "Location:"
+    !!! note "Location"
 
-        ```
+        ```text
         Windows: C:\Users\<YourName>\Zomboid\Server\<ServerName>.ini
         Linux:   /home/<user>/Zomboid/Server/<ServerName>.ini
         ```
@@ -79,146 +107,176 @@ The spawn pool is filtered based on the server's Sandbox Options before any coor
         ```ini
         Mods=RandomSpawnLocations
         WorkshopItems=3730705272
-        Map=Random Spawn, KY;Muldraugh, KY
+        Map=Muldraugh, KY
         SpawnPoint=0,0,0
         ```
 
-    With modded maps, `RandomSpawnLocations` must be first in `Mods=`, and `Random Spawn, KY` must be first in `Map=` with `Muldraugh, KY` last:
+    `Random Spawn, KY` does **not** need to be on the `Map=` line. With Map Mods, `RandomSpawnLocations` must be first in `Mods=`. Each Map Mod's own map names go **before** `Muldraugh, KY`, which stays last:
 
-    !!! note "Example:"
+    !!! note "Example"
 
         ```ini
         Mods=RandomSpawnLocations;RavenCreekB42;AnruisiTown;Maplewood
-        Map=Random Spawn, KY;RavenCreekB42;AnruisiTown;Maplewood;Muldraugh, KY
+        Map=RavenCreekB42;AnruisiTown;Maplewood;Muldraugh, KY
         ```
 
-    !!! warning
-        The Server Settings UI may overwrite your `.ini` when you save changes in-game. Keep a backup copy of your edited `.ini` elsewhere so you don't have to redo this.
-
-=== "Step 3 — SpawnRegions File"
-
-    !!! note "SpawnRegions File"
-    
-        Create or edit `<ServerName>_spawnregions.lua` in `Zomboid/Server/` (must match your `.ini` filename exactly):
-
-        ```lua
-        function SpawnRegions()
-            return {
-                { name = "Random Spawn, KY", file = "media/maps/Random Spawn, KY/spawnpoints.lua" },
-                { name = "Muldraugh, KY",    file = "media/maps/Muldraugh, KY/spawnpoints.lua" },
-            }
-        end
-        ```
+    !!! tip
+        An older version of this page said to add `Random Spawn, KY` to `Map=`. It can be removed. Leaving it does no harm, but removing the Mod later while it is still on the `Map=` line logs one error.
 
     !!! warning
-        Both entries are required. `Muldraugh, KY` must be present or the spawn selection screen is skipped entirely.
+        The Server Settings UI may overwrite the `.ini` when changes are saved in game. Keep a backup copy of the edited `.ini` elsewhere.
 
-=== "Step 4 — Start the server"
+=== "Step 3, Start the Server"
 
     !!! note "Start the Server"
 
-        Start the server, then open **Custom Sandbox** settings (or edit the '[ServerName]_SandboxVars.lua' file) to configure the **Random Spawn** tabs (see [Configuration](#configuration) below). Players will now see only **Random Spawn, KY** on the 'Select Spawn Location' screen.
+        Start the server, then set the filters in the Random Spawn Admin Menu (hold **M**, then **Map & Filters** and **Settings**). Players now see **Random Spawn** on the 'Select Spawn Location' screen, plus any Spawn Regions the Admin offers.
 
 ## Configuration
 
-All settings are found under the **Random Spawn** tabs in the Custom Sandbox options screen.
+Open the Random Spawn Admin Menu by holding **M** (or the rebound Map key) and choosing **RSL Admin Menu**. It has two parts, **Settings** and **Map & Filters**. In Multiplayer only Admins can open it. **Apply** sends the change to the server. In the Settings window, **Save** is enabled once something has changed and **Cancel** discards the changes.
 
-### Random Spawn - Presets
+### Settings
 
 | Setting | Default | Description |
-|:---:|:---:|:---|
-| Balanced (Residential) | `On` | Restricts the spawn pool to a hand-picked set of locations, with an equal number (currently 12 per location) of verified spawn points across each of the 12 supported locations. Recommended for most servers. |
-| Balanced (Non-Residential) | `Off` | A curated balanced pool of non-residential spawn points, mirroring the existing Balanced Residential preset. |
-| Balanced (Wilderness) | `Off` | A curated balanced pool of Wilderness spawn points for servers wanting a more isolated experience with even geographic distribution. |
+|:---|:---:|:---|
+| Server Logging | `Off` | Writes a `[RSL][LOG]` line for each spawn: Player, coordinates, Location ID, Building size and whether the Building was repopulated. In Multiplayer it also logs when a Safehouse is claimed and which Spawn Points left the pool. See [Server Logging](#server-logging). |
+| Repopulate Large Buildings | `On` | The game removes Zombies around a Spawn Point according to the Sandbox Setting *Player Spawn Area*, which can empty a whole Building. When On, Large Buildings (16+ rooms, 800+ tiles reachable from the Spawn Point, or 6+ floors) repopulate with Zombies once the Player spawns, while the rooms around the Player (up to two nearby floors) stay empty. When Off, the game's own setting applies and Zombies are not repopulated. |
+| Allow Clients to View Spawnpoints | `Off` | Multiplayer only. Lets connecting Players see the Spawn Point dots on the 'Select Spawn Location' screen, including Players who join after an Admin changed it. |
+| Remove Safehouses from Spawn Pool | `On` | Multiplayer only. Spawn Points inside a claimed Safehouse are removed from the pool and added back when the claim ends. See [Safehouses](#safehouses). |
 
-Disabling one of the below listed Towns in 'Random Spawn - Locations' will remove it from the Balanced pool. Enabling a Town not listed below will have no effect while Balanced is selected. Map Mods can be Enabled while Balanced is selected and they will be added to the Balanced pool.
+### Map & Filters
 
-### Random Spawn - Locations
+| Section | What It Does |
+|:---|:---|
+| Presets | Balanced (Residential), Balanced (Non-Residential) and Balanced (Wilderness). See [Presets](#presets) |
+| Types | Residential, Non-Residential, Hardcore, Isolated Areas and Wilderness. See [Types](#types) |
+| Locations | Toggle individual Vanilla towns: Brandenburg, Dixie, Doe Valley, Echo Creek, Ekron, Fallas Lake, Dark Wallow Lake, Irvington, Louisville, March Ridge, Muldraugh, Riverside, Rosewood, Valley Station and West Point. Dixie, Doe Valley and Dark Wallow Lake are off by default |
+| Map Mods | Toggle supported Map Mods. Only maps active on the server can be used. The others are greyed out with the reason |
+| Spawn Regions | Extra rows on the 'Select Spawn Location' screen: Vanilla towns, Isolated Areas, Wilderness, Map Mod towns and the Project Indiana towns. Players who pick one spawn at a random Spawn Point inside it |
+| Spawn Chances | Optional percentage per Location for how often Players spawn there (1% per click, hold to repeat). With it off, Locations with more Spawn Points are picked more often |
+| Show Map Dots | Draws the Spawn Points of the selection on the map |
+| Show Claimed Safehouses | Multiplayer Admin Map only: shows only the Spawn Points currently removed by a Safehouse claim |
 
-Toggle individual vanilla towns on or off. Towns included in the Balanced pool are enabled by default.
+Combinations that cannot work are greyed out with a tooltip explaining why. For example, Balanced (Residential) and Balanced (Non-Residential) cannot be combined with Isolated Areas or Wilderness. Selecting nothing does not fall back to a Balanced pool: pick at least one Preset or Type.
 
-**Supported locations:** Brandenburg, Dixie, Doe Valley Forest, Echo Creek, Ekron, Fallas Lake, Hog Wallow, Irvington, Louisville, March Ridge, Muldraugh, Riverside, Rosewood, Valley Station, West Point
+### Presets
 
-### Random Spawn - Types
+Balanced Presets use hand-picked, verified Spawn Points with an equal number (12) per Location for an even spread across the map, instead of letting large Locations such as Louisville dominate. Only Balanced (Residential) is on by default (recommended for Multiplayer).
 
-| Option | Default | Description |
-|:---:|:---:|:---|
-| Residential | `Off` | Houses, apartments, trailers, farmhouses |
-| Non-Residential | `Off` | Businesses, warehouses, offices, civic buildings |
-| Hardcore Spawns | `Off` | Dangerous or challenging locations |
-| Isolated Areas | `Off` | Remote cabins, camps, rural hideaways |
-| Wilderness | `Off` | Open wilderness areas with no nearby buildings |
+- **Balanced (Residential):** 12 Spawn Points in each of 12 towns (every town except Dixie, Doe Valley and Dark Wallow Lake)
+- **Balanced (Non-Residential):** 12 Spawn Points in each of the same 12 towns
+- **Balanced (Wilderness):** a smaller hand-picked set of Wilderness Spawn Points
 
-### Random Spawn - Map Mods
+Untick a town in Locations to remove it from the Balanced Presets. Selected Map Mods are added on top.
 
-Enable spawn points in supported modded map regions. All are **disabled by default**.
+### Types
+
+All Types are off by default.
+
+- **Residential:** houses, apartments, trailers and farmhouses
+- **Non-Residential:** businesses, warehouses, offices and civic buildings
+- **Hardcore:** dangerous locations such as police stations, jails and military zones
+- **Isolated Areas:** remote Spawn Points such as cabins, camps and rural hideaways
+- **Wilderness:** Spawn Points in the middle of the woods, at least 200 tiles from any road or structure
+
+### Safehouses
+
+When **Remove Safehouses from Spawn Pool** is On, Players can claim a Safehouse that contains a Spawn Point. Spawn Points inside it leave the Spawn Pool for as long as the claim lasts. Spawning or respawning inside a claimed Safehouse does not unlock its doors or turn its lights on. The Claim button shows the real vanilla reason when a claim is not allowed (for example the Player already owns a Safehouse, has not survived long enough, or the building is not residential). Claims expire according to the server's `SafeHouseRemovalTime`. The Admin Map shows the removed Spawn Points with a house icon and a red ring.
+
+### Server Logging
+
+With **Server Logging** On, the log (`console.txt` or the server log) contains lines like:
+
+```text
+[RSL][LOG][SPAWN] <Player> spawned at (11870, 6916, 0) (Location ID: 3104) // Building Size: Large // Building Repopulated: True
+[RSL][LOG][SPAWN] Options: Presets: None // Types: Residential, NonResidential // Locations: All // Map Mods: None // Regions: Louisville, KY // Settings: ServerLogging
+```
+
+The Location ID is the Spawn Point's ID in the [Random Spawn Locations Interactive Map](https://obnox.dev/RSLMapProject/) and the [Index/Spreadsheet](https://obnox.dev/RSLSheet/). In Multiplayer, the **Options** line is logged when an Admin applies a change instead of with each spawn.
+
+### Supported Map Mods
 
 | Map Mod | Workshop ID |
-|:---:|:---:|
+|:---|:---:|
 | Maplewood [B42] | `3644794945` |
 | Raven Creek (B42) | `3484263516` |
 | AnruisiTown (Military Bastion) | `3659676359` |
 
-!!! tip
-    Consider allowing players to spawn with a flashlight in their inventory, especially if you enable Non-Residential, Hardcore, or Isolated Areas spawn types.
+Tikitown, Willowbrook Bastion, Daisy County, Iris Eyot, Frogtown, Blackpine, Begonia Town and the Project Indiana towns are also supported. The [Supported Map Mods Collection](https://steamcommunity.com/sharedfiles/filedetails/?id=3830890031){target="_blank"} lists them all. Every Map Mod is **off by default**. Clients must be subscribed to the same Map Mods as the server. Map Mods are not available in Challenge Modes for now.
 
-If all filters produce zero valid results, the mod automatically falls back to the Balanced Residential pool to prevent spawn failures.
+!!! tip
+    Consider letting Players spawn with a flashlight, especially with Non-Residential, Hardcore or Isolated Areas spawns enabled.
+
+### Challenge Modes
+
+Random Spawn Locations supports **28 Minutes Later** (hospitals and medical centres), **A Really CD DA** and **Winter Is Coming** (the Residential pool) and **Top of the World** (skyscrapers in Louisville). In A Really CD DA and Winter Is Coming the Mod picks the Location first and the Spawn Point second, giving every Location an equal chance instead of favouring Locations with many Spawn Points such as Louisville. 28 Minutes Later adds a **Use Hospital Patient Outfit** option (default On) to Character Creation, limiting the clothing to a Hospital Gown, Slippers and Socks. Untick it to choose any clothing.
+
+### Deprecated Sandbox Options
+
+!!! warning "The Sandbox Options Are Deprecated"
+
+    The Sandbox tabs (**Random Spawn - Presets**, **Locations**, **Types** and **Map Mods**) are deprecated and will be removed in a future update. Existing Sandbox values are carried over into the Random Spawn Locations UI the first time it opens. Changing them afterwards has no effect. Set the filters in the Random Spawn Admin Menu instead.
 
 ## Compatibility
 
 | Build | SP | Hosted MP | Dedicated MP |
 |:---:|:---:|:---:|:---:|
-| 42 | ✅ | ✅ | ✅ |
+| 42.19+ | ✅ | ✅ | ✅ |
 | 41 | ❌ | ❌ | ❌ |
 
-!!! success "Is this Mod safe to add/remove to existing Saves?"
-
-    Yes, it is safe to add to or remove from existing saves (existing characters are unaffected).
+!!! success "Is this Mod safe to add to or remove from existing Saves?"
+    Yes. Existing Characters are unaffected.
 
 !!! success "Is this Mod compatible with 'X' Mod?"
-
-    May conflict with other Mods that modify the 'Choosepawn selection screen or `spawnpoints.lua`. Does not affect players respawning in Safehouses.
+    It may conflict with other Mods that change the 'Select Spawn Location' screen or `spawnpoints.lua`.
 
 !!! success "Does this Mod support 'X' Language?"
-
-    Yes, this Mod has translations for all Supported Project Zomboid languages.
+    Yes. It has translations for all 28 supported Project Zomboid languages.
 
 ## FAQ / Troubleshooting
 
-!!! question "Why is the 'Select Spawn Location' screen skipped entirely"
+!!! question "Why is the 'Select Spawn Location' screen skipped entirely?"
+    Check that `RandomSpawnLocations` is in the `Mods=` line and that the server console shows no Random Spawn Locations errors at start. The Mod always adds two Spawn Regions itself. No `<ServerName>_spawnregions.lua` edit is needed.
 
-    Check that `<ServerName>_spawnregions.lua` has both the `Random Spawn, KY` and `Muldraugh, KY` entries.
+!!! question "Why do both 'Random Spawn, KY' and 'Muldraugh, KY' appear on the 'Select Spawn Location' screen?"
+    The Client UI hook is not loading. Confirm every Player is subscribed and `RandomSpawnLocations` is in `Mods=`.
 
-!!! question "Why am I seeing both 'Random Spawn, KY' and 'Muldraugh, KY' appear on the 'Select Spawn Location' screen?"
+!!! question "Why does the map not load on the 'Select Spawn Location' screen, with no description or video?"
+    Check that `RandomSpawnLocations` is in `Mods=` and that the connecting Player is subscribed to the Mod. `Random Spawn, KY` does not need to be on the `Map=` line.
 
-    The Client UI hook isn't loading. Confirm every player is subscribed and `RandomSpawnLocations` is in `Mods=`.
-
-!!! question "Map doesn't load in Spawn Select / no description or video"
-
-    `map.info` isn't being read. Ensure `Random Spawn, KY` is first in `Map=` and the mod is loading.
-
-!!! question "Players spawn outside buildings or in the ground"
-
+!!! question "Players spawn outside buildings or in the ground."
     Check the server console for "Spawn not in building" errors and report the IDs on the Workshop page or in Nox's Discord Server.
 
-!!! question "Sandbox Option changes aren't taking effect mid-session"
+!!! question "Do changes apply while the server is running?"
+    Yes. Changes made in the Random Spawn Admin Menu and applied with **Apply** take effect immediately and are sent to every Client. Changes to the deprecated Sandbox options have no effect.
 
-    Sandbox filter changes made via the in-game Admin menu require a Server restart to apply. Changing these mid-session on a live server generally isn't recommended. Configure before startup instead.
+!!! question "Why can't Next be pressed on the 'Select Spawn Location' screen?"
+    Next is disabled while the Random Spawn Locations panel is open or while the selection is not valid. Pick at least one Preset or Type. The tooltip on Next explains what is missing.
 
-!!! question "How do I add a modded map to an existing save"
+!!! question "Why is an option greyed out?"
+    It conflicts with something else in the selection, or it belongs to a Map Mod that is not active. Hover over it to see the reason.
 
-    This may require a full save wipe. If players have already explored areas near the new map region, the world may not load correctly. Back up your save first (`Zomboid\Saves\Multiplayer\<ServerName>\` and `Zomboid\Server\<ServerName>_player.db`).
+!!! question "How is a Map Mod added to an existing Save?"
+    This may need a full Save wipe. If Players have already explored areas near the new map region, the world may not load correctly. Back up the Save first (`Zomboid\Saves\Multiplayer\<ServerName>\` and `Zomboid\Server\<ServerName>_player.db`).
 
 ### Uninstalling
 
-1. Remove `RandomSpawnLocations` from `Mods=` in your `.ini`
-2. Remove `Random Spawn, KY` from `Map=` in your `.ini`
-3. Delete `<ServerName>_spawnregions.lua` from `Zomboid/Server/`, or restore the vanilla version
-4. Existing characters are unaffected — the save itself doesn't change
+1. Remove `RandomSpawnLocations` from `Mods=` in the `.ini`
+2. If `Random Spawn, KY` was added to `Map=` for an older version, remove it
+3. If `<ServerName>_spawnregions.lua` was edited for an earlier version, delete it and the game regenerates its default
+4. Existing Characters are unaffected and the Save itself does not change
+
+## Roadmap
+
+- **Player Spawn Proximity Check:** avoid spawning new Characters near existing Players
+- **Single Use Spawn Points:** remove Spawn Points once used, resetting the pool when all are used up
+- **Larger Balanced Pools:** more than 12 Spawn Points per Location
+- **More Map Mods:** further community Map Mods (requests welcome on the Workshop page)
 
 ## Credits
 
-- A huge thank you to **Pillow** — ([Pillow's Random Spawns](https://steamcommunity.com/sharedfiles/filedetails/?id=1911132112)) — for making their extensive spawn location data openly available under the [GNU General Public License v3.0](https://github.com/crispiboi/Pillow-s-Many-Spawns-Pack). The spawn pool in this mod is built upon their incredible work curating thousands of verified spawn points across Knox Country.
+- A huge thank you to **Pillow** ([Pillow's Random Spawns](https://steamcommunity.com/sharedfiles/filedetails/?id=1911132112)) for making their extensive spawn location data openly available under the [GNU General Public License v3.0](https://github.com/crispiboi/Pillow-s-Many-Spawns-Pack). The Spawn Pool in this Mod is built on their work curating thousands of verified Spawn Points across Knox Country.
 
 This Mod is open source and available under the [GNU General Public License v3.0](https://github.com/ObnoxiouslyNoxious/RandomSpawnLocations-MP-/blob/main/LICENSE).
 

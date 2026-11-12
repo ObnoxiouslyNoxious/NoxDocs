@@ -2,7 +2,7 @@
 
 <div class="mod-hero" markdown>
 
-![Zombies Have Smokes](../assets/img/mods/smokes.png){ .mod-icon }
+![Zombies Have Smokes](../assets/img/mods/steam/zombies-have-smokes/preview.jpg){ .mod-icon }
 
 <span class="pz-tag">B42</span><span class="pz-tag">SP/MP</span>
 
@@ -14,44 +14,43 @@
 
 ## Overview
 
-Adds a configurable chance for Zombies to drop Cigarettes, Lighters & Tobacco Products on death, on top of vanilla drop behaviour.
+*'Let's be real... Smoking gives you emphysema and kills you slowly. But you know what's worse and kills you faster? The Knox Infection. Pick your Poison'*
+
+Adds a configurable chance for Zombies to drop Cigarettes, Cigarette Packs, Cigarette Cartons, Cigars, Cigarillos, Chewing Tobacco and Tobacco Pouches on death, often with a Lighter or Matches, on top of vanilla drop behaviour.
 
 ## Gallery
 
 <div class="gallery-grid" markdown>
-![Zombies Have Smokes screenshot 1](../assets/img/mods/gallery/zombies-have-smokes/smokes1.png) ![Zombies Have Smokes screenshot 2](../assets/img/mods/gallery/zombies-have-smokes/smokes2.png) ![Zombies Have Smokes screenshot 3](../assets/img/mods/gallery/zombies-have-smokes/smokes3.png) ![Zombies Have Smokes screenshot 4](../assets/img/mods/gallery/zombies-have-smokes/smokes4.png) ![Zombies Have Smokes screenshot 5](../assets/img/mods/gallery/zombies-have-smokes/smokes5.png) ![Zombies Have Smokes screenshot 6](../assets/img/mods/gallery/zombies-have-smokes/smokes6.png) ![Zombies Have Smokes screenshot 7](../assets/img/mods/gallery/zombies-have-smokes/smokes7.png) ![Zombies Have Smokes screenshot 8](../assets/img/mods/gallery/zombies-have-smokes/smokes8.png) ![Zombies Have Smokes screenshot 9](../assets/img/mods/gallery/zombies-have-smokes/smokes9.png) ![Zombies Have Smokes screenshot 10](../assets/img/mods/gallery/zombies-have-smokes/smokes10.png)
+![Zombies Have Smokes screenshot 1](../assets/img/mods/steam/zombies-have-smokes/1.jpg) ![Zombies Have Smokes screenshot 2](../assets/img/mods/steam/zombies-have-smokes/2.jpg) ![Zombies Have Smokes screenshot 3](../assets/img/mods/steam/zombies-have-smokes/3.jpg) ![Zombies Have Smokes screenshot 4](../assets/img/mods/steam/zombies-have-smokes/4.jpg) ![Zombies Have Smokes screenshot 5](../assets/img/mods/steam/zombies-have-smokes/5.jpg) ![Zombies Have Smokes screenshot 6](../assets/img/mods/steam/zombies-have-smokes/6.jpg) ![Zombies Have Smokes screenshot 7](../assets/img/mods/steam/zombies-have-smokes/7.jpg) ![Zombies Have Smokes screenshot 8](../assets/img/mods/steam/zombies-have-smokes/8.jpg) ![Zombies Have Smokes screenshot 9](../assets/img/mods/steam/zombies-have-smokes/9.jpg) ![Zombies Have Smokes screenshot 10](../assets/img/mods/steam/zombies-have-smokes/10.jpg) ![Zombies Have Smokes screenshot 11](../assets/img/mods/steam/zombies-have-smokes/11.jpg)
 </div>
 
 ## Features
 
-- Loose Cigarettes, Cigarette Packs, Cigarette Cartons, Cigars, Cigarillos, Chewing Tobacco, Tobacco Pouches (with Papers) and Lighters can all drop from Zombies
-- Every drop type has its own independent Enable/Disable toggle and drop-chance settings
-- All Tobacco items except for Chewing Tobacco & Cigarette Cartons spawn alongisde a Lighter
-Cigarette Packs, Tobacco Pouches, Rolling Papers, Lighters and Matches all spawn in a 'used' condition, varying the amount of uses left on each drop for balancing and realism.
-- All item spawning is handled server-side only. Clients do not run any drop logic, preventing duplication and inventory desync.
-- Includes Translations for all Supported PZ Languages
+- Loose Cigarettes, Cigarette Packs, Cigarette Cartons, Cigars, Cigarillos, Chewing Tobacco and Tobacco Pouches (with Rolling Papers) can drop from Zombies
+- Every drop type has its own Enable toggle and drop chance
+- Tobacco Pouches, Cigars, Cigarillos and Cigarettes come with a Lighter, a Disposable Lighter or Matches
+- Cigarette Packs, Chewing Tobacco, Tobacco Pouches, Rolling Papers, Lighters and Matches drop partly used, for balance and realism
+- All drops are handled on the server. Clients run no drop logic, preventing duplication and inventory desync
+- Translations for all 28 supported Project Zomboid languages
 
 ## How It Works
 
-Every Zombie death runs through a series of independent rolls in order. The first roll to succeed determines the drop. A Zombie will never receive items from multiple rolls.
+Every Zombie death runs through a series of rolls in order. Only enabled drop types roll. The first roll to succeed decides the drop: a Zombie never receives items from more than one roll.
 
-Roll 1: Chewing Tobacco
+1. Chewing Tobacco
+2. Tobacco Pouch, with Rolling Papers and a Lighter or Matches
+3. Cigarette Carton
+4. Cigar, with a Lighter or Matches
+5. Cigarillo, with a Lighter or Matches
+6. Cigarettes. With **Enable Cigarette Packs** on, a second roll decides whether the drop is a Cigarette Pack or loose Cigarettes. A Lighter or Matches always comes with them
 
-Roll 2: Tobacco Pouch with Rolling Papers and a Lighter or Matches.
-
-Roll 3: Cigarette Carton
-
-Roll 4: Cigar with a Lighter or Matches.
-
-Roll 5: Cigarillo with a Lighter or Matches.
-
-Roll 6: Cigarettes — If this roll succeeds, a second roll determines whether the drop is a Cigarette Pack or loose Singles. A Lighter or Matches is always added alongside.
+The rolls only happen on the server, preventing item duplication and desync in Multiplayer.
 
 ## Installation
 
-**Singleplayer:** Subscribe to the Mod on Steam Workshop and enable it from the 'Choose Mods' screen.
+**Singleplayer:** Subscribe to the Mod on the Steam Workshop and enable it from the 'Choose Mods' screen.
 
-**Multiplayer (Hosted & Dedicated):** Subscribe to the Mod on Steam Workshop and add the below lines to your Server's .ini file
+**Multiplayer (Hosted and Dedicated):** Subscribe to the Mod on the Steam Workshop and add the lines below to the server's `.ini` file.
 
 ```ini
 Mods=ZombiesHaveSmokesB42
@@ -60,47 +59,47 @@ WorkshopItems=3728443049
 
 ## Configuration
 
-All settings live under the **Zombies Have Smokes** tab in Custom Sandbox options.
+Found under the **Zombies Have Smokes** tab in the Custom Sandbox options.
 
 | Setting | Default | Range | Description |
-|:---:|:---:|:---:|:---:|
-| Enable Cigarettes | On | On/Off | Master toggle for all Cigarette drops (Singles, Packs) |
-| Enable Cigarette Packs | On | On/Off | Allows the Cigarette drop the chance to be a Pack instead of loose Singles |
-| Cigarette Drop Chance | 30% | 1–100% | Chance a Zombie drops Cigarettes on death |
-| Cigarette Pack Chance | 15% | 1–100% | Chance the Cigarette drop is a Pack rather than Singles |
-| Minimum / Maximum Singles | 1 / 3 | 1–100 | Range of loose Cigarettes dropped when the Pack roll fails |
-| Enable Chewing Tobacco | On | On/Off | Zombies can drop Chewing Tobacco |
-| Chewing Tobacco Drop Chance | 2% | 1–100% | Rolls independently of other drops |
-| Enable Tobacco Pouch | On | On/Off | Zombies can drop a Pouch of Tobacco + Rolling Papers (+ Lighter/Matches) |
-| Tobacco Pouch Drop Chance | 2% | 1–100% | Chance a Zombie drops a Pouch of Tobacco on death |
-| Enable Cigarette Cartons | Off | On/Off | Zombies can drop a full Cigarette Carton |
-| Cigarette Carton Drop Chance | 1% | 1–100% | Chance a Zombie drops a Cigarette Carton on death |
-| Enable Cigars | Off | On/Off | Zombies can drop a Cigar (+ Lighter/Matches) |
-| Cigar Drop Chance | 2% | 1–100% | Chance a Zombie drops a Cigar on death |
-| Enable Cigarillos | Off | On/Off | Zombies can drop a Cigarillo (+ Lighter/Matches) |
-| Cigarillo Drop Chance | 3% | 1–100% | Chance a Zombie drops a Cigarillo on death |
+|:---|:---:|:---:|:---|
+| Enable Cigarettes | On | On/Off | Master toggle for Cigarette drops (loose and Packs) |
+| Enable Cigarette Packs | On | On/Off | Lets a Cigarette drop be a Pack instead of loose Cigarettes |
+| Cigarette Drop Chance (%) | 30 | 1-100 | Chance a Zombie drops Cigarettes on death |
+| Cigarette Pack Drop Chance (%) | 15 | 1-100 | Chance a Cigarette drop is a Pack rather than loose Cigarettes |
+| Minimum / Maximum Cigarettes | 1 / 3 | 1-100 | Number of loose Cigarettes when the drop is not a Pack |
+| Enable Chewing Tobacco | On | On/Off | Lets Zombies drop Chewing Tobacco |
+| Chewing Tobacco Drop Chance (%) | 2 | 1-100 | Chance a Zombie drops Chewing Tobacco on death |
+| Enable Tobacco Pouch | On | On/Off | Lets Zombies drop a Tobacco Pouch with Rolling Papers and a Lighter or Matches |
+| Tobacco Pouch Drop Chance (%) | 2 | 1-100 | Chance a Zombie drops a Tobacco Pouch on death |
+| Enable Cigarette Cartons | Off | On/Off | Lets Zombies drop a Cigarette Carton |
+| Cigarette Carton Drop Chance (%) | 1 | 1-100 | Chance a Zombie drops a Cigarette Carton on death |
+| Enable Cigars | Off | On/Off | Lets Zombies drop a Cigar with a Lighter or Matches |
+| Cigar Drop Chance (%) | 2 | 1-100 | Chance a Zombie drops a Cigar on death |
+| Enable Cigarillos | Off | On/Off | Lets Zombies drop a Cigarillo with a Lighter or Matches |
+| Cigarillo Drop Chance (%) | 3 | 1-100 | Chance a Zombie drops a Cigarillo on death |
 
-!!! note
-    If Minimum Singles is set higher than Maximum Singles by mistake, the mod silently swaps the two values to prevent a crash.
+!!! note "Minimum Higher than Maximum"
+    If Minimum Cigarettes is set higher than Maximum Cigarettes by mistake, the Mod swaps the two values to prevent an error.
 
 ## Compatibility
 
-| Build |  SP | Hosted MP | Dedicated MP
+| Build | SP | Hosted MP | Dedicated MP |
 |:---:|:---:|:---:|:---:|
-| 42 | ✅ | ✅ | ✅ |
-| 41 or earlier | ❌ | ❌ | ❌ |
+| 42.15+ | ✅ | ✅ | ✅ |
+| 41 | ❌ | ❌ | ❌ |
 
-!!! success "Is this Mod safe to add/remove to existing Saves?"
+!!! note "Earlier Build 42 Versions"
+    Builds of 42 before 42.15 still run the Mod, but the Sandbox Settings screen shows untranslated setting names.
 
-    Yes, it is safe to add to existing saves and safe to remove, though any Tobacco product already looted from Zombies will remain in your save.
+!!! success "Is this Mod safe to add to or remove from existing Saves?"
+    Yes. Tobacco products already looted from Zombies stay in the Save after removal.
 
 !!! success "Is this Mod compatible with 'X' Mod?"
-
-    Yes, compatible with all other loot Mods. Does not modify any existing loot tables or distributions.
+    Yes, with all other loot Mods. It does not change any existing loot tables or distributions.
 
 !!! success "Does this Mod support 'X' Language?"
-
-    Yes, this Mod has translations for all 28 Supported Project Zomboid languages.
+    Yes. It has translations for all 28 supported Project Zomboid languages.
 
 ## Changelog
 
