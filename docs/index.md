@@ -127,7 +127,7 @@ Mod Information including Overview, Features, Mechanics, Settings, Compatibility
 
     Shows both Imperial and Metric temperature and wind speed in AEBS broadcasts, keeping the Server's native unit first.
 
--   ![Menu Theme Framework](assets/img/mods/steam/menu-theme-framework/preview.jpg){ .card-thumb }
+-   ![Menu Theme Framework](assets/img/mods/steam/menu-theme-framework/preview.gif){ .card-thumb }
     **[Menu Theme Framework](mods/menu-theme-framework.md)**
     <span class="pz-tag">B42</span><span class="pz-tag">SP/MP</span>
 
