@@ -27,7 +27,7 @@
 - Feature one
 - Feature two
 
-## How It Works
+## Mechanics
 
 Explain the core mechanic, what triggers it, the order rolls/checks happen in, and a note that spawning/logic runs server-side only (if applicable) to reassure multiplayer safety.
 
