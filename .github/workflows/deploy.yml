@@ -25,7 +25,6 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Refresh Mod images from Steam
         run: python scripts/fetch_steam_images.py --live-only
-        continue-on-error: true
       - run: mkdocs build
       - uses: actions/upload-pages-artifact@v3
         with:
