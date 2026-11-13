@@ -18,6 +18,8 @@
 
 Livestock Traders adds travelling Animal Merchants to Knox Country. Players can buy and sell nine Animal types and trade farm Products at Traders who move between curated locations or stay at Admin-placed Static locations.
 
+Suitable for long-term Playthroughs/Servers where Animals are no longer found alive in unexplored Ranch Zones (Animals in Ranch Zones first loaded after Day 60 have a chance of spawning Dead, increasing over time until it reaches 100% at Day 190 for Female/Baby Animals and Day 250 for Male Animals). It also suits Playthroughs/Servers that want to gate Livestock behind a Currency or an XP Rank.
+
 The Mod supports Singleplayer, Hosted Multiplayer and Dedicated servers. [NPC Tiles](npc-tiles.md) is required for the Trader characters and Tile Placement.
 
 ## Gallery

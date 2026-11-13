@@ -115,10 +115,18 @@ Right-click the Sidebar Icon and choose **DCS Admin Menu** (Admin access is need
 | Edit Shop Items | Opens the Vendor Editor to turn Items on or off, set prices and stock ranges, pin Items and save Presets |
 | Backup DCS Data | Exports all DCS data to a backup file in `Zomboid/Lua/DailyChallengeSystem` |
 | Load DCS Data from Backup | Imports DCS data from a backup file, replacing the current data |
+| Debug Logging | Singleplayer: **Enable Debug Logging** / **Disable Debug Logging**. Multiplayer: opens the Debug Logging page to enable it for selected Players. See [Debug Logging](#debug-logging) |
 | Teleport to Vendors | Teleports to the current Vendor Locations |
 | Teleport to Quest/Deliver | Teleports to the current Quest/Deliver Locations |
 
 Reset, Clear and Add actions work on online and offline Players. Online Players see the change at once. Offline Players see it the next time they log in. Leaderboard positions update at the next Rotation.
+
+### Debug Logging
+
+Debug Logging writes everything DCS tracks (including actions only the server tracks) to the Player's `console.txt`. Use it to find out why a Challenge is not progressing or completing, and attach the log to a bug report.
+
+- **Singleplayer:** press **Enable Debug Logging** in Admin Tools. It records until you press **Disable Debug Logging** and is always off again when the game starts.
+- **Multiplayer:** an Admin enables it per Player (Online or Offline) in **Admin Menu > Debug Logging**. The Player then has 24 hours to right-click and choose **Start Debug Logging** from the Context Menu, up to 4 times for 15 minutes each. When the starts are used up, an Admin must enable it again. Admin accounts can always start Debug Logging for themselves.
 
 ### Challenge Options
 
@@ -235,6 +243,9 @@ Each integration becomes available when both Mods are enabled.
 
 !!! question "Where are the Vendors?"
     Their Locations appear on the World Map once enough Challenges are complete in the current Rotation (default 3), or after reading a Vendor Location Map dropped by Zombies.
+
+!!! question "A Challenge is not progressing or completing. What can I do?"
+    Turn on [Debug Logging](#debug-logging) and repeat the action, then send the `console.txt` lines starting with `[DCS]` with your bug report.
 
 !!! question "Can another Mod read Challenge progress?"
     Yes, through the [Dynamic Challenges API](../documentation/api/dynamic-challenges.md).
