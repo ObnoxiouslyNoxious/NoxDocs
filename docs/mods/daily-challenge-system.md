@@ -194,6 +194,13 @@ Debug Logging writes everything DCS tracks (including actions only the server tr
 
 Admins can also place up to 8 **Static Vendors** by right-clicking the ground and choosing **Add Static Vendor**.
 
+## Integrations
+
+| Mod | What It Adds |
+|:---|:---|
+| [XP Ranks](xp-ranks.md) | Rank XP for each Challenge (default 50), for completing every Challenge in a Rotation (350), for keeping a Streak into a new Rotation (100) and for a full Streak cycle (5000). Vendor Items can require a minimum Rank. The XP Ranks Leaderboard gains a Dynamic Challenges section. The amounts are on the XP Ranks page of DCS Settings |
+| [NPC Tiles](npc-tiles.md) | The Quest, Visit and Vendor markers can be NPC Characters instead of the Safe, Gnome and Vending Machine (the NPC Tile option of each Object Marker setting) |
+
 ### XP Ranks
 
 Needs [XP Ranks](https://steamcommunity.com/sharedfiles/filedetails/?id=3799796873){target="_blank"}.
@@ -208,12 +215,20 @@ Needs [XP Ranks](https://steamcommunity.com/sharedfiles/filedetails/?id=37997968
 
 With XP Ranks installed, the Vendor Editor can also set a minimum Rank for each Item.
 
-## Integrations
+### NPC Tiles
 
-| Mod | What It Adds |
-|:---|:---|
-| [XP Ranks](xp-ranks.md) | Rank XP for each Challenge (default 50), for completing every Challenge in a Rotation (350), for keeping a Streak into a new Rotation (100) and for a full Streak cycle (5000). Vendor Items can require a minimum Rank. The XP Ranks Leaderboard gains a Dynamic Challenges section. The amounts are on the XP Ranks page of DCS Settings |
-| [NPC Tiles](npc-tiles.md) | The Quest, Visit and Vendor markers can be NPC Characters instead of the Safe, Gnome and Vending Machine (the NPC Tile option of each Object Marker setting) |
+Needs [NPC Tiles](https://steamcommunity.com/sharedfiles/filedetails/?id=3759853561){target="_blank"}. The **NPC Tiles** page of DCS Settings has three options, one for each world object DCS places. Each can be set to its normal object or to **NPC Tile**. Without NPC Tiles installed the page is locked.
+
+| Setting | Default | With NPC Tile selected |
+|:---|:---:|:---|
+| Quest Object Marker | Safe | A named NPC replaces the Safe at the Quest Location. The Challenge reads "Deliver [Item] to [NPC] at [Location]". Right-click the NPC while carrying the Item to hand it over |
+| Visit Object Marker | Barney the Gnome | A named NPC replaces the Gnome at the Visit Location. Right-click the NPC to complete the Visit |
+| Vendor Object Marker | Vending Machine | A Vendor NPC replaces the Vending Machine at each Vendor Location. Right-click the NPC to open the Vendor Shop and the Wallet menu |
+
+- Quest and Visit NPCs are drawn from 16 named characters (Mr and Mrs Blue, Green, Orange, Yellow, Brown, Pink, Red and White). They are picked each Rotation, and the Quest and Visit NPCs are never the same colour. Vendor NPCs come from a set of 10 Vendor characters.
+- The World Map shows NPC markers for NPC Tile Locations.
+- Each option works on its own, so any mix of NPCs and normal objects is possible.
+- Changes apply at the next Rotation or Server Restart. Existing Static Vendors keep the look they were placed with. When the Vendor Object Marker is NPC Tile, **Add Static Vendor** lets the Admin choose the NPC.
 
 Each integration becomes available when both Mods are enabled.
 
